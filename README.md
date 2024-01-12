@@ -10,6 +10,9 @@ At forbedre den visuelle præsentation af tekstindhold ved at anvende principper
 - Utopia's [Type Scale Calculator](https://utopia.fyi/type/calculator/?c=320,16,1.25,1240,18,1.333,5,1,&s=0.75%7C0.5%7C0.25,1.5%7C2%7C3%7C4%7C6,s-l&g=s,l,xl,12) og [Space Scale Calculator](https://utopia.fyi/space/calculator?c=320,16,1.25,1240,18,1.333,5,1,&s=0.75%7C0.5%7C0.25,1.5%7C2%7C3%7C4%7C6,s-l&g=s,l,xl,12) for at generere en flydende typografi og spacing skala.
 - [Sane Typography Rules](https://anthonyhobday.com/sideprojects/saferules/) - Dette værktøj giver en praktisk oversigt over typografiregler, som kan hjælpe dig med at træffe gode beslutninger om skriftstørrelser, linjeafstand og skrifttyper. Det er særligt nyttigt til at forstå, hvordan forskellige skriftstørrelser og linjeafstande interagerer for at skabe en sammenhængende og læsevenlig tekst.
 
+![billede 1](/assets/1.png)
+![billede 2](/assets/2.png)
+
 ## Opgavebeskrivelse
 
 Du skal arbejde med denne branch, som indeholder et HTML-dokuement med hovedoverskrifter, underoverskrifter, paragraffer, billeder og andre typografiske elementer. Brug "style.css" til at tilføje typografiske og farvemæssige forbedringer til indholdet.
