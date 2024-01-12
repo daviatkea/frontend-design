@@ -23,4 +23,4 @@ Din løsning skal vise en forståelse af flow space-teknikken og korrekt impleme
 
 ## Aflevering
 
-Aflever linket til din løsning på Fronter.
+Generer et GitHub Pages-link til din løsning og aflever det på Fronter.
