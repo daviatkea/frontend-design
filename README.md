@@ -33,5 +33,5 @@ Generer et GitHub Pages-link til din løsning og aflever det på Fronter. Din l�
 
 ## Tips
 
-![billede 1](/assets/1.png)
 ![billede 2](/assets/2.png)
+![billede 1](/assets/1.png)
