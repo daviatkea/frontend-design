@@ -23,4 +23,4 @@ Din løsning skal vise en forståelse af flow space-teknikken og korrekt impleme
 
 ## Aflevering
 
-Gem din færdige CodePen og aflever linket på Fronter.
+Aflever linket til din løsning på Fronter.
