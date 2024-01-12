@@ -1,16 +1,26 @@
-# Design for Developers - Opgaver
+# **Flow Space-teknikken**
 
-## Instruktioner
+## Formål
 
-Klon og download dette GitHub-repository. Vælg en øvelse ved at skifte til den tilsvarende branch (se liste over øvelser nedenfor)
+At forstå og implementere flow space-teknikken til at håndtere vertikale afstande mellem elementer i et dokument, baseret på en effektiv CSS-teknik beskrevet af Andy Bell på Piccalilli. Denne teknik anvender CSS Custom Properties til at skabe et fleksibelt og vedligeholdelsesvenligt design.
 
-## Opgaveoversigt (via branches)
+## **Ressourcer**
 
-### Typografi
+[My favourite 3 lines of CSS](https://piccalil.li/blog/my-favourite-3-lines-of-css/) af Andy Bell.
 
-1. Flow Space-teknikken ("flow-space")
-2. Styling af tekstindhold ("text-styling")
+## Opgavebeskrivelse
 
-### Selectors
+Du skal arbejde med denne branch, som indeholder et HTML-dokument med en blanding af **`h2`**, **`h3`**, og **`p`** tags samt et stylesheet ("style.css").
 
-3. Style uden klasser ("no-classes")
+Din opgave er at anvende flow space-teknikken, så der skabes et behageligt og ensartet vertikalt rum mellem de forskellige elementer. Du skal anvende følgende afstande:
+
+1. Angiv en standard vertikal margin på `.5rlh` mellem alle elementer inde i **`article`**, med mulighed for overskrive denne via en custom property kaldet `--flow-space`.
+2. For `h2`, sæt `—flow-space`-værdien til `2rlh`.
+3. For `h3`, sæt `—flow-space`-værdien til `1rlh`.
+4. For alle elementer, der kommer lige efter **`h3`**, reducér `—flow-space` til `.25rlh`.
+
+Din løsning skal vise en forståelse af flow space-teknikken og korrekt implementere de nødvendige CSS Custom Properties.
+
+## Aflevering
+
+Gem din færdige CodePen og aflever linket på Fronter.
