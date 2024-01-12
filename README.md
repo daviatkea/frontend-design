@@ -32,4 +32,4 @@ Du forventes at tage stilling til skriftstørrelser, linjeafstand, marginer, og 
 
 ## Aflevering
 
-Aflever linket til din løsning på Fronter. Din løsning vil blive bedømt på dens evne til at forbedre læsbarheden og visuel tiltrækning af indholdet, effektiv brug af genererede skalaer og hierarkiske farvetoner.
+Generer et GitHub-pages link til din løsning og aflever det på Fronter. Din løsning vil blive bedømt på dens evne til at forbedre læsbarheden og visuel tiltrækning af indholdet, effektiv brug af genererede skalaer og hierarkiske farvetoner.
