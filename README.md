@@ -2,7 +2,7 @@
 
 ## Instruktioner
 
-Klon og download dette GitHub-repository. Vælg en øvelse ved at skifte til den tilsvarende branch (se liste over øvelser nedenfor)
+Fork og klon dette GitHub-repository. Vælg en øvelse ved at skifte til den tilsvarende branch (se liste over øvelser nedenfor)
 
 ## Opgaveoversigt (via branches)
 
