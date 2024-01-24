@@ -23,4 +23,6 @@ Din løsning skal vise en forståelse af flow space-teknikken og korrekt impleme
 
 ## Aflevering
 
-Generer et GitHub Pages-link til din løsning og aflever det på Fronter.
+Find link til din løsning på Netlify og aflever det på Fronter.
+
+Link-struktur: **flow-space--**[Dit unikke netlify link].netlify.app/
