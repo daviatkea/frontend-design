@@ -24,4 +24,4 @@ Anvend den udleverede guide til at revidere det eksisterende design.
 
 ## Aflevering
 
-Generer et GitHub Pages-link til din løsning og aflever det på Fronter.
+Find link til din løsning på Netlify og aflever det på Fronter.
