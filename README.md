@@ -12,13 +12,17 @@ Denne opgave sigter mod at forbedre din forståelse og anvendelse af den nye :ha
 
 Du skal arbejde med denne branch, som består af flere kort, der indeholder en overskrift, et tekstafsnit og/eller et billede. Dit mål er at sætte regler op for disse kort ved hjælp af **`:has()`**.
 
+Tilføj dine styles i **`style.css`**.
+
 Kortene skal styles forskelligt baseret på følgende betingelser:
 
 - Kort uden både et billede og en overskrift skal have en justeret font-størrelse og linjehøjde for paragraf tekst.
 - Kort uden billeder skal have en forøget font-størrelse for overskrifter.
 - Kort med billeder skal have nul padding, men deres indhold skal matche padding’en fra de øvrige kort.
 
-Se billedet nedenfor for reference.
+Se billedet for reference.
+
+![Billede](billede.jpeg)
 
 **Bemærk, at denne branch IKKE inkluderer et CSS Reset.**
 

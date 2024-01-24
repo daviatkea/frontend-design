@@ -1,171 +1,76 @@
-@import url('https://fonts.cdnfonts.com/css/gill-sans-2');
-@import url('https://fonts.cdnfonts.com/css/abril-fatface');
+.card {
+    padding: 1rem;
 
-article {
-    font-family: 'Gill Sans', sans-serif;
-    max-inline-size: 400px;
-    background: #fff;
-    margin-block: 3rem;
-    box-shadow:
-        0 20px 25px -5px rgba(0, 0, 0, 0.1),
-        0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    border-radius: 1rem;
-    border: 1px solid #DADCEB;
-}
-
-.picture {
-    display: grid;
-    padding: .5rem;
-
-    >* {
-        grid-area: 1 / 1;
-    }
-
-    .back {
-        place-self: start;
-        margin: 1rem;
-        z-index: 1;
-        color: #fff;
-    }
-
-    .image-count {
-        padding: .5rem 1rem;
-        border-radius: 1rem;
-        letter-spacing: 2px;
-        line-height: 1;
-        place-self: end;
-        background: #BDC4CE;
-        color: #fff;
-        margin: 1rem;
-    }
-
-    img {
-        border: 1px solid #DADCEB;
-        border-radius: .5rem;
+    .content>*+* {
+        margin-top: .25rlh;
     }
 }
 
-.card-content {
-    display: grid;
-    gap: 1rem;
-    padding: 0 2rem 1rem;
-}
 
-.title {
-    font-family: 'Abril Fatface', sans-serif;
-    font-weight: 400;
-    font-size: 2rem;
-    color: #3C55CC;
-}
 
-.location {
-    color: #C8C9CB;
-    text-transform: uppercase;
-    font-size: .95em;
-}
 
-.description p {
-    text-align: center;
-}
 
-.amenities-details {
-    display: flex;
-    gap: 1rem;
 
-    li {
-        flex: 1;
+
+
+
+
+
+
+
+
+
+@layer reset, cards;
+
+@layer cards {
+    .cards {
+        list-style: none;
+        padding: 0;
+        max-inline-size: 60ch;
+
         display: grid;
-        gap: .75rem;
-        place-items: center;
-        padding: .25rem;
-        background: #F0F2FF;
-        color: #3C55CC;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .card {
+        background: #fff;
+        border-radius: 6px;
+        box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+        overflow: clip;
+    }
+
+    h3 {
+        color: #0f172a;
+        line-height: 1.3;
+    }
+
+    p {
+        color: #334155;
     }
 }
-
-
-footer {
-    padding: 1rem 2rem;
-    box-shadow: 0 -2px 4px -1px #0002;
-
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-
-
-    button {
-        padding: .75rem 1rem;
-        border: none;
-        line-height: 1;
-        border-radius: 8px;
-        font-weight: 500;
-        font: inherit;
-        background: #F0F2FF;
-        color: #3C55CC;
-    }
-
-    .price {
-        font-weight: 600;
-
-        span {
-            color: #908F9F;
-            font-size: 0.75em;
-            font-weight: 400;
-        }
-    }
-}
-
-
-
-
-
-
-
-
-
-
 
 @layer reset {
     * {
-        margin: 0;
         box-sizing: border-box;
+        margin: 0;
+    }
+
+    img {
+        inline-size: 100%;
+        block-size: auto;
+        display: block;
+    }
+
+    html {
+        font-family: system-ui;
+        background: #CFD8E4;
+        line-height: 1.5;
     }
 
     body {
-        min-height: 100svh;
-        font-family: system-ui, sans-serif;
         display: grid;
         place-content: center;
-        background: #F5F6FA;
-    }
-
-    img,
-    svg {
-        display: block;
-        max-inline-size: 100%;
-        height: auto;
-    }
-
-    ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    .sr-only {
-        border: 0 !important;
-        clip: rect(1px, 1px, 1px, 1px) !important;
-        /* 1 */
-        -webkit-clip-path: inset(50%) !important;
-        clip-path: inset(50%) !important;
-        /* 2 */
-        height: 1px !important;
-        margin: -1px !important;
-        overflow: hidden !important;
-        padding: 0 !important;
-        position: absolute !important;
-        width: 1px !important;
-        white-space: nowrap !important;
+        block-size: 100svh;
     }
 }
