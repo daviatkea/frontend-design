@@ -3,191 +3,135 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Typografi</title>
+    <title>Card UI</title>
     <link rel="stylesheet" href="./assets/global.css" />
   </head>
   <body>
     <article>
-      <h1>Display Heading</h1>
-      <p class="text-lead">
-        Until now, trying to style an article, document, or blog post with
-        Tailwind has been a tedious task that required a keen eye for typography
-        and a lot of complex custom CSS.
-      </p>
-      <p>
-        By default, Tailwind removes all of the default browser styling from
-        paragraphs, headings, lists and more. This ends up being really useful
-        for building application UIs because you spend less time undoing
-        user-agent styles, but when you <em>really are</em> just trying to style
-        some content that came from a rich-text editor in a CMS or a markdown
-        file, it can be surprising and unintuitive.
-      </p>
-      <p>
-        We get lots of complaints about it actually, with people regularly
-        asking us things.
-      </p>
-
-      <p>
-        We hear you, but we're not convinced that simply disabling our base
-        styles is what you really want. You don't want to have to remove
-        annoying margins every time you use a p element in a piece of your
-        dashboard UI. And I doubt you really want your blog posts to use the
-        user-agent styles either — you want them to look <em>awesome</em>, not
-        awful.
-      </p>
-      <p>
-        The plugin is our attempt to give you what you <em>actually</em> want,
-        without any of the downsides of doing something stupid like disabling
-        our base styles.
-      </p>
-      <p>
-        It adds a new class that you can slap on any block of vanilla HTML
-        content and turn it into a beautiful, well-formatted document:
-      </p>
-      <p>
-        For more information about how to use the plugin and the features it
-        includes,
-        <a
-          href="https://github.com/tailwindcss/typography/blob/master/README.md"
-          >read the documentation</a
-        >.
-      </p>
-
-      <h2>What to expect from here on out</h2>
-      <p>
-        What follows from here is just a bunch of absolute nonsense I've written
-        to dogfood the plugin itself. It includes every sensible typographic
-        element I could think of, like <strong>bold text</strong>, unordered
-        lists, ordered lists, code blocks, block quotes,
-        <em>and even italics</em>.
-      </p>
-      <p>It's important to cover all of these use cases for a few reasons:</p>
-
-      <p>Now we're going to try out another header style.</p>
-      <h3>Typography should be easy</h3>
-      <p>
-        So that's a header for you — with any luck if we've done our job
-        correctly that will look pretty reasonable.
-      </p>
-      <p>Something a wise person once told me about typography is:</p>
-      <p>
-        It's probably important that images look okay here by default as well:
-      </p>
-      <figure>
+      <div class="picture">
+        <a href="#0" class="back">
+          <svg width="32" height="32" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="m7.825 13l4.9 4.9q.3.3.288.7t-.313.7q-.3.275-.7.288t-.7-.288l-6.6-6.6q-.15-.15-.213-.325T4.426 12q0-.2.063-.375T4.7 11.3l6.6-6.6q.275-.275.688-.275t.712.275q.3.3.3.713t-.3.712L7.825 11H19q.425 0 .713.288T20 12q0 .425-.288.713T19 13z"
+            />
+          </svg>
+        </a>
         <img
-          src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80"
+          src="https://assets.codepen.io/3794/retreat.jpg?format=auto"
           alt=""
         />
-        <figcaption>
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It
-          has roots in a piece of classical Latin literature from 45 BC, making
-          it over 2000 years old.
-        </figcaption>
-      </figure>
-      <p>
-        Now I'm going to show you an example of an unordered list to make sure
-        that looks good, too:
-      </p>
+        <div class="image-count">1/8</div>
+      </div>
 
-      <p>And that's the end of this section.</p>
+      <div class="card-content">
+        <header>
+          <h2 class="title">Mountain Retreat</h2>
+          <p class="location">Snowy Peaks, NSW, Australia</p>
+        </header>
 
-      <h2>What if we stack headings?</h2>
+        <section class="amenities">
+          <h3 class="sr-only">Amenities</h3>
+          <ul class="amenities-details">
+            <li>
+              <svg width="36" height="36">
+                <use href="#house" />
+              </svg>
+              <p>House</p>
+            </li>
+            <li>
+              <svg width="36" height="36">
+                <use href="#bed" />
+              </svg>
+              <p>2 beds</p>
+            </li>
+            <li>
+              <svg width="36" height="36">
+                <use href="#bath" />
+              </svg>
+              <p>1 bath</p>
+            </li>
+            <li>
+              <svg width="36" height="36">
+                <use href="#car" />
+              </svg>
+              <p>1 garage</p>
+            </li>
+          </ul>
+        </section>
 
-      <h3>We should make sure that looks good, too.</h3>
+        <section class="description">
+          <h3 class="sr-only">Description</h3>
+          <p>
+            Experience the wonders of nature as you hike through the snow-capped
+            mountains and fish in the nearby river. This newly built cabin is
+            perched high in the mountains with beautiful views.
+          </p>
 
-      <p>
-        Sometimes you have headings directly underneath each other. In those
-        cases you often have to undo the top margin on the second heading
-        because it usually looks better for the headings to be closer together
-        than a paragraph followed by a heading should be.
-      </p>
+          <p>
+            It comfortably sleeps 4 people and includes a dining room, living
+            room, sauna, and fully stocked kitchen.
+          </p>
+        </section>
+      </div>
 
-      <h3>When a heading comes after a paragraph …</h3>
-
-      <p>
-        When a heading comes after a paragraph, we need a bit more space, like I
-        already mentioned above. Now let's see what a more complex list would
-        look like.
-      </p>
-
-      <p>
-        After this sort of list I usually have a closing statement or paragraph,
-        because it kinda looks weird jumping right to a heading.
-      </p>
-      <h2>Code should look okay by default.</h2>
-      <p>
-        I think most people are going to use
-        <a href="https://highlightjs.org/">highlight.js</a> or
-        <a href="https://prismjs.com/">Prism</a> or something if they want to
-        style their code blocks but it wouldn't hurt to make them look
-        <em>okay</em> out of the box, even with no syntax highlighting.
-      </p>
-      <p>Hopefully that looks good enough to you.</p>
-
-      <h3>What about nested lists?</h3>
-
-      <p>
-        Nested lists basically always look bad which is why editors like Medium
-        don't even let you do it, but I guess since some of you goofballs are
-        going to do it we have to carry the burden of at least making it work.
-      </p>
-
-      <p>
-        The most annoying thing about lists in Markdown is that
-        <code>&lt;li&gt;</code> elements aren't given a child
-        <code>&lt;p&gt;</code> tag unless there are multiple paragraphs in the
-        list item. That means I have to worry about styling that annoying
-        situation too.
-      </p>
-
-      <p>And finally a sentence to close off this section.</p>
-
-      <h2>There are other elements we need to style</h2>
-      <p>
-        I almost forgot to mention links, like
-        <a href="https://tailwindcss.com"
-          >this link to the Tailwind CSS website</a
-        >. We almost made them blue but that's so yesterday, so we went with
-        dark gray, feels edgier.
-      </p>
-      <p>We even included table styles, check it out:</p>
-
-      <h3>Sometimes I even use <code>code</code> in headings</h3>
-      <p>
-        Even though it's probably a bad idea, and historically I've had a hard
-        time making it look good. This
-        <em>"wrap the code blocks in backticks"</em> trick works pretty well
-        though really.
-      </p>
-      <p>
-        Another thing I've done in the past is put a code tag inside of a link,
-        like if I wanted to tell you about the repository. I don't love that
-        there is an underline below the backticks but it is absolutely not worth
-        the madness it would require to avoid it.
-      </p>
-
-      <h4>We haven't used an <code>h4</code> yet</h4>
-      <p>
-        But now we have. Please don't use in your content, Medium only supports
-        two heading levels for a reason, you animals. I honestly considered
-        using a pseudo-element to scream at you if you use an.
-      </p>
-
-      <h4>Let's make sure we don't screw that up with elements, either.</h4>
-      <p>
-        Phew, with any luck we have styled the headings above this text and they
-        look pretty good.
-      </p>
-      <p>
-        Let's add a closing paragraph here so things end with a decently sized
-        block of text. I can't explain why I want things to end that way but I
-        have to assume it's because I think things will look weird or unbalanced
-        if there is a heading too close to the end of the document.
-      </p>
-      <p class="text-small">
-        What I've written here is probably long enough, but adding this final
-        sentence can't hurt.
-      </p>
+      <footer>
+        <button>Book now</button>
+        <p class="price">$299.00 <span>/ night</span></p>
+      </footer>
     </article>
+
+    <svg viewBox="0 0 80 20" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="car" viewBox="0 0 256 256">
+        <path
+          fill="currentColor"
+          d="M240 112h-10.8l-27.78-62.5A16 16 0 0 0 186.8 40H69.2a16 16 0 0 0-14.62 9.5L26.8 112H16a8 8 0 0 0 0 16h8v80a16 16 0 0 0 16 16h24a16 16 0 0 0 16-16v-16h96v16a16 16 0 0 0 16 16h24a16 16 0 0 0 16-16v-80h8a8 8 0 0 0 0-16M69.2 56h117.6l24.89 56H44.31ZM64 208H40v-16h24Zm128 0v-16h24v16Zm24-32H40v-48h176ZM56 152a8 8 0 0 1 8-8h16a8 8 0 0 1 0 16H64a8 8 0 0 1-8-8m112 0a8 8 0 0 1 8-8h16a8 8 0 0 1 0 16h-16a8 8 0 0 1-8-8"
+        />
+      </symbol>
+      <symbol id="bed" viewBox="0 0 512 512">
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="32"
+          d="M384 240H96V136a40.12 40.12 0 0 1 40-40h240a40.12 40.12 0 0 1 40 40v104ZM48 416V304a64.19 64.19 0 0 1 64-64h288a64.19 64.19 0 0 1 64 64v112"
+        />
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="32"
+          d="M48 416v-8a24.07 24.07 0 0 1 24-24h368a24.07 24.07 0 0 1 24 24v8M112 240v-16a32.09 32.09 0 0 1 32-32h80a32.09 32.09 0 0 1 32 32v16m0 0v-16a32.09 32.09 0 0 1 32-32h80a32.09 32.09 0 0 1 32 32v16"
+        />
+      </symbol>
+      <symbol id="bath" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          fill-rule="evenodd"
+          d="M5.385 2.75c-.903 0-1.635.732-1.635 1.635v6.865H22a.75.75 0 0 1 0 1.5h-.268c.007.045.011.09.014.136c.004.058.004.12.004.18v.039c0 .375 0 .595-.016.84c-.142 2.236-1.35 4.302-3.101 5.652a.766.766 0 0 1 .038.068l1 2a.75.75 0 1 1-1.342.67l-.968-1.935a7.357 7.357 0 0 1-3.228.805h-.007c-.74.028-1.464.045-2.126.045c-.662 0-1.386-.017-2.126-.045h-.007a7.357 7.357 0 0 1-3.228-.805l-.968 1.935a.75.75 0 1 1-1.342-.67l1-2a.758.758 0 0 1 .038-.068c-1.751-1.35-2.96-3.416-3.101-5.652a12.933 12.933 0 0 1-.016-.84v-.355H2a.75.75 0 0 1 0-1.5h.25V4.385a3.135 3.135 0 0 1 6.046-1.164l.11.275a3.843 3.843 0 0 1 2.466.192a3.973 3.973 0 0 1 2.132 2.213a.75.75 0 0 1-.401.963L6.643 9.43a.75.75 0 0 1-.995-.413a4.178 4.178 0 0 1 .02-3.107a4.09 4.09 0 0 1 1.379-1.774l-.144-.358A1.635 1.635 0 0 0 5.385 2.75Zm-1.302 10h-.1a.249.249 0 0 0-.233.25v.083c0 .402 0 .574.013.767c.185 2.922 2.695 5.528 5.607 5.822c.195.02.303.024.56.034c.728.027 1.433.044 2.07.044c.637 0 1.342-.017 2.07-.044c.257-.01.365-.014.56-.034c2.912-.294 5.422-2.9 5.607-5.822c.013-.193.013-.365.013-.767v-.099c0-.002 0-.002 0 0a.25.25 0 0 0-.234-.233c.001 0 .002 0 0 0H20l-.082-.001H4.083Zm6.2-7.682a2.361 2.361 0 0 0-1.976.053a2.565 2.565 0 0 0-1.25 1.354a2.688 2.688 0 0 0-.19 1.226l4.38-1.886a2.426 2.426 0 0 0-.965-.747Z"
+          clip-rule="evenodd"
+        />
+      </symbol>
+      <symbol id="house" viewBox="0 0 512 512">
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="32"
+          d="M80 212v236a16 16 0 0 0 16 16h96V328a24 24 0 0 1 24-24h80a24 24 0 0 1 24 24v136h96a16 16 0 0 0 16-16V212"
+        />
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="32"
+          d="M480 256L266.89 52c-5-5.28-16.69-5.34-21.78 0L32 256m368-77V64h-48v69"
+        />
+      </symbol>
+    </svg>
   </body>
 </html>
