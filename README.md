@@ -14,3 +14,7 @@ Fork og klon dette GitHub-repository. Vælg en øvelse ved at skifte til den til
 ### Selectors
 
 3. Style uden klasser ("no-classes")
+
+### Layout
+
+4. Layout Breakouts ("breakouts")
