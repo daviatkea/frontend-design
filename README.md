@@ -24,4 +24,6 @@ Anvend den udleverede guide til at revidere det eksisterende design.
 
 ## Aflevering
 
-Find link til din løsning på Netlify og aflever det på Fronter.
+Find link\* til din løsning på Netlify og aflever det på Fronter.
+
+# Link-struktur: **card-ui--**[Dit unikke netlify link].netlify.app/
