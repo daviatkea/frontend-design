@@ -8,13 +8,17 @@ Fork og klon dette GitHub-repository. Vælg en øvelse ved at skifte til den til
 
 ### Typografi
 
-1. Flow Space-teknikken ("flow-space")
-2. Styling af tekstindhold ("text-styling")
+- Flow Space-teknikken ("flow-space")
+- Styling af tekstindhold ("text-styling")
 
 ### Selectors
 
-3. Style uden klasser ("no-classes")
+- Style uden klasser ("no-classes")
 
 ### Layout
 
-4. Layout Breakouts ("breakouts")
+- Layout Breakouts ("breakouts")
+
+### UI Patterns
+
+- Card UI ("card-ui")
