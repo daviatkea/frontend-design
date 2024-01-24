@@ -6,7 +6,7 @@ At forbedre den visuelle præsentation af et Card UI ved at anvende funktionelle
 
 ## Ressourcer
 
-- [16 little UI design rules that make a big impact](https://www.adhamdannaway.com/blog/ui-design/16-ui-design-rules) som guide.
+- Brug [16 little UI design rules that make a big impact](https://www.adhamdannaway.com/blog/ui-design/16-ui-design-rules) som guide.
 
 ## Opgavebeskrivelse
 
