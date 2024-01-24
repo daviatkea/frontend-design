@@ -22,7 +22,7 @@ Kortene skal styles forskelligt baseret på følgende betingelser:
 
 Se billedet for reference.
 
-![Billede](billede.jpeg)
+![Billede](./assets/billede.jpeg)
 
 **Bemærk, at denne branch IKKE inkluderer et CSS Reset.**
 
