@@ -22,3 +22,8 @@ Fork og klon dette GitHub-repository. Vælg en øvelse ved at skifte til den rel
 ### UI Patterns
 
 - Card UI ("card-ui")
+
+### Code in the Dark
+
+- Code in the Dark 1 ("citd-1")
+- Code in the Dark 2 ("citd-2")
