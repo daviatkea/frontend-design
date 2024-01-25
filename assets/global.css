@@ -4,13 +4,20 @@
 @import "../style.css" layer(exercise);
 
 
-.overlay {
+@layer exercise {
+    body {
+        min-height: 100svh;
+        font-family: system-ui, sans-serif;
+    }
+}
+
+[data-overlay] {
     position: fixed;
     inset: 0;
     inline-size: 100%;
     block-size: 100vh;
     background: #fff;
     z-index: 100;
-    padding-inline: max(1rem, 50% - 1100px / 2);
+    padding: 2rem max(1rem, 50% - 1100px / 2);
     opacity: calc(1 - var(--hide-overlay, 1));
 }
