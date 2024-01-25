@@ -14,6 +14,8 @@ Du skal arbejde med denne branch, som indeholder en Card-komponent. Brug "style.
 
 Anvend den udleverede guide til at revidere det eksisterende design.
 
+![citd-1](./assets/image.png)
+
 ### Specifikke mål
 
 1. Bliv opmærksom på design-optimeringerne
