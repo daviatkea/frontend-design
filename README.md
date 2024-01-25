@@ -1,31 +1,28 @@
-# **Card UI**
+# **Code in the Dark 1**
 
 ## Formål
 
-At forbedre den visuelle præsentation af et Card UI ved at anvende funktionelle designprincipper. Denne opgave opfordrer dig til at være opmærksom på detaljerne i din styling for at maksimere både æstetikken og læsbarheden.
-
-## Ressourcer
-
-- Brug [16 little UI design rules that make a big impact](https://www.adhamdannaway.com/blog/ui-design/16-ui-design-rules) som guide.
+Formålet med denne øvelse er at skærpe din evne til at visualisere det ønskede resultat af et layout udelukkende gennem koden. Du vil "kode i blinde", for at se, om det, du forestiller dig, stemmer overens med resultatet af din kode. Dette vil hjælpe dig med at forfine din forståelse af, hvordan HTML og CSS interagerer for at skabe et visuelt layout, og hvordan man kan forudsige det visuelle output baseret på ren kodning.
 
 ## Opgavebeskrivelse
 
-Du skal arbejde med denne branch, som indeholder en Card-komponent. Brug "style.css" til at forbedre designet.
+Du skal arbejde med denne branch, som indeholder en HTML-side, en CSS-fil og diverse billeder, som du skal bruge til at kode nedenstående layout. Der er et overlay, der skjuler resultatet af dit arbejde undervejs.
 
-Anvend den udleverede guide til at revidere det eksisterende design.
+Når du føler dig klar til at afsløre dit design, skal du ændre værdien af `--hide-overlay` til '1' i :root-sektionen i CSS-filen. Dette vil fjerne overlayet og afsløre resultatet af dit arbejde.
 
-![citd-1](./assets/image.png)
+![Code in the Dark 1](./assets/image.png)
 
 ### Specifikke mål
 
-1. Bliv opmærksom på design-optimeringerne
-2. Arbejd med eksisterende CSS
-3. Tilret CSS for at forbedre designet ud fra designpricipperne i guiden
+- Udfordre dig selv til at anvende din viden om CSS for at bygge et layout "i blinde".
+- Bliv mere selvsikker i dit arbejde med HTML og CSS uden direkte feedback.
 
-**Bemærk, at denne branch IKKE inkluderer et CSS Reset.**
+**Bemærk, at denne branch allerede inkluderer et CSS Reset.**
 
 ## Aflevering
 
-Find link til din løsning på Netlify og aflever det på Fronter.
+Find linket til din løsning på Netlify og aflever det på Fronter.
 
-Link-struktur: **card-ui--**[Dit unikke netlify link].netlify.app/
+Link-struktur: **citd-1--**[Dit unikke netlify link].netlify.app/
+
+**Notér:** Denne opgave er en fantastisk måde at finjustere din kodningsprocess og blive mere afstemt med dine styling beslutninger, uden at blive påvirket af det visuelle resultat undervejs.
