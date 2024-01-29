@@ -30,7 +30,7 @@
 
 ### Selectors
 
-- Style uden klasser ("no-classes")
+- No Classes ("no-classes")
 
 ### Layout
 
