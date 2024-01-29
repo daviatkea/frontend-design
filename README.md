@@ -1,41 +1,36 @@
-# **Styling af tekstindhold**
+# **Grid Breakout**
+
+![Breakout blueprint](./assets/breakout1.png)
 
 ## Formål
 
-At forbedre den visuelle præsentation af tekstindhold ved at anvende principper for god typografi og farveskemaer. Denne opgave opfordrer dig til at være opmærksom på detaljerne i din styling for at maksimere både æstetikken og læsbarheden.
+At lave et layout, der gør det muligt at lave 'breakouts' - elementer, der bryder ud af sidens maksimumbredde for at skabe et dynamisk layout.
 
 ## Ressourcer
 
-- [Some Simple Ways to Make Content Look Good](https://set.studio/some-simple-ways-to-make-content-look-good/) for teoretisk baggrund.
-- Utopia's [Type Scale Calculator](https://utopia.fyi/type/calculator/?c=320,16,1.25,1240,18,1.333,5,1,&s=0.75%7C0.5%7C0.25,1.5%7C2%7C3%7C4%7C6,s-l&g=s,l,xl,12) og [Space Scale Calculator](https://utopia.fyi/space/calculator?c=320,16,1.25,1240,18,1.333,5,1,&s=0.75%7C0.5%7C0.25,1.5%7C2%7C3%7C4%7C6,s-l&g=s,l,xl,12) for at generere en flydende typografi og spacing skala.
-- [Sane Typography Rules](https://anthonyhobday.com/sideprojects/saferules/) - Dette værktøj giver en praktisk oversigt over typografiregler, som kan hjælpe dig med at træffe gode beslutninger om skriftstørrelser, linjeafstand og skrifttyper. Det er særligt nyttigt til at forstå, hvordan forskellige skriftstørrelser og linjeafstande interagerer for at skabe en sammenhængende og læsevenlig tekst.
+- [Layout breakouts teknik](https://ryanmulligan.dev/blog/layout-breakouts/)
 
 ## Opgavebeskrivelse
 
-Du skal arbejde med denne branch, som indeholder et HTML-dokuement med hovedoverskrifter, underoverskrifter, paragraffer, billeder og andre typografiske elementer. Brug "style.css" til at tilføje typografiske og farvemæssige forbedringer til indholdet.
+Du skal arbejde med denne branch, som indeholder et HTML-dokuement med overskrifter, paragraffer, et citat og et billede. Din opgave er at anvende CSS Grid, i stedet for den nuværende teknik, til at lave et fleksibelt breakout-layout, hvor elementer som citatblokke og billeder strækker sig ud over deres sædvanlige containerbredde.
 
-Anvend så vidt muligt de udleverede tips og teknikker til at revidere den eksisterende typografi og farveskema. Fokuser på en god typografiskala til at skabe kontrast og hierarki mellem overskrifter og brødtekst og forbedr den vertikale rytme i dit indhold ved at justere linjehøjden, hvor det er passende.
+Du skal navngive dine grid-linjer, så du nemmere kan placere diverse elementer i grid'et.
+
+Citatblokken skal udvide sig ud over den normale indholdskolonne – du bestemmer selv, hvor meget.
+
+Billeder skal fylde viewportens bredde.
 
 ### Specifikke mål
 
-1. Anvend Utopias Type Scale Calculator til at generere en flydende typografiskala til at definere skriftstørrelser for forskellige elementer som overskrifter og paragraffer.
-2. Implementering af Utopias spacingskala for at ensrette afstanden mellem de forskellige elementer.
-3. Juster farven på brødtekst for at sikre, at overskrifter skiller sig ud, og overvej at bruge en lettere farve for at reducere visuel vægt af mindre vigtig tekst – brug de medfølgende gråtoner (i :root).
-4. Øg linjehøjden for at forbedre læsbarheden, baseret på skriftstørrelse og tekstens tæthed.
+- Forstå, hvordan CSS Grid hælper med at lave fleksible layouts.
+- Arbejde med og ændre eksisterende CSS
 
 **Bemærk, at denne branch allerede inkluderer et CSS Reset.**
 
-Du forventes at tage stilling til skriftstørrelser, linjeafstand, marginer, og farveværdier i din løsning.
-
 ## Aflevering
 
-Find link til din løsning på Netlify og aflever det på Fronter.
+Find linket til din løsning på Netlify og aflever det på Fronter.
 
-Link-struktur: **text-styling--**[Dit unikke netlify link].netlify.app/
+Link-struktur: **breakout--**[Dit unikke netlify link].netlify.app/
 
-Din løsning vil blive bedømt på dens evne til at forbedre læsbarheden og visuel tiltrækning af indholdet, effektiv brug af genererede skalaer og hierarkiske farvetoner.
-
-## Tips
-
-![billede 2](/assets/2.png)
-![billede 1](/assets/1.png)
+![Solution](./assets/breakout2.png)

@@ -1,4 +1,5 @@
-@layer reset, exercise;
+@layer reset, base, exercise;
 
 @import "./reset.css" layer(reset);
+@import "./base.css" layer(base);
 @import "../style.css" layer(exercise);
