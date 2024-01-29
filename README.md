@@ -19,7 +19,7 @@ Fork og klon dette GitHub-repository. Vælg en øvelse ved at skifte til den rel
 
 ### Layout
 
-- Layout Breakouts ("breakouts")
+- Grid Breakout ("breakout")
 
 ### UI Patterns
 
