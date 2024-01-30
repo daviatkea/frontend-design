@@ -28,7 +28,7 @@ Her er et eksempel på, hvordan du kan indsætte et Mastodon-ikon:
 </svg>
 ```
 
-Sæt denne kode ind på det sted i HTML-dokumentet, hvor du vil have ikonet til at vises. Husk at erstatte #mastodon med det relevante ikonnavn, når du indsætter andre ikoner som #github, #website, eller #twitter.
+Sæt denne kode ind på det sted i HTML-dokumentet, hvor du vil have ikonet til at vises. Husk at erstatte #mastodon med det relevante ikonnavn, når du indsætter andre ikoner som `#github`, `#website` eller `#twitter`.
 
 ### Specifikke mål
 
