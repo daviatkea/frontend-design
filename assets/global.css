@@ -16,8 +16,12 @@
     inset: 0;
     inline-size: 100%;
     block-size: 100vh;
-    background: #fff;
+    background: inherit;
     z-index: 100;
     padding: 2rem max(1rem, 50% - 1100px / 2);
     opacity: calc(1 - var(--hide-overlay, 1));
+
+    img {
+        max-width: 400px;
+    }
 }

@@ -1,8 +1,13 @@
 :root {
-    --color-heading: #0B0D19;
-    --color-body: #677386;
-    --color-bg-button: #3D7BFA;
-    --color-text-button: #FFF;
+    background: #E3EDFB;
+
+    --color-icon: #0B3A67;
+
+    --icon-size: 1.6rem;
+    --image-width: 8rem;
+    --card-padding: 1rem;
+
+    --font-heading: 1.75rem;
 
     /* Når du synes, du er færdig, så ændr værdien herunder til '1' for at se dit resultat i browseren */
     --hide-overlay: 0;
