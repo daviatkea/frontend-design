@@ -6,11 +6,11 @@ Formålet med denne øvelse er at skærpe din evne til at visualisere det ønske
 
 ## Opgavebeskrivelse
 
-Du skal arbejde med denne branch, som indeholder en HTML-side, en CSS-fil og diverse billeder, som du skal bruge til at kode nedenstående layout. Der er et overlay, der skjuler resultatet af dit arbejde undervejs.
+Du skal arbejde med denne branch, som indeholder en HTML-side, en CSS-fil og diverse billeder, som du skal bruge til at kode nedenstående layout.
 
-Forsøg at matche det vedhæftede layout så tæt som muligt.
+Forsøg at matche layoutet og sigt efter 80%-90% match.
 
-Når du føler dig klar til at afsløre dit design, skal du ændre værdien af `--hide-overlay` til '1' i :root-sektionen i CSS-filen. Dette vil fjerne overlayet og afsløre resultatet af dit arbejde.
+Der er et overlay, der skjuler resultatet af dit arbejde undervejs. Når du føler dig klar til at afsløre dit design, skal du ændre værdien af `--hide-overlay` til '1' i :root-sektionen i CSS-filen. Dette vil fjerne overlayet og afsløre resultatet af dit arbejde.
 
 ![Code in the Dark 1](./assets/image.png)
 
