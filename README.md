@@ -27,7 +27,7 @@ Find linket til din løsning på Netlify og aflever det på Fronter.
 
 Link-struktur: **citd-1--**[Dit unikke netlify link].netlify.app/
 
-### Ressourcer
+## Ressourcer
 
 Maksimum-bredden for layoutet er 1100px.
 
