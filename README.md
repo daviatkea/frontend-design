@@ -28,3 +28,13 @@ Find linket til din løsning på Netlify og aflever det på Fronter.
 Link-struktur: **citd-1--**[Dit unikke netlify link].netlify.app/
 
 **Notér:** Denne opgave er en fantastisk måde at finjustere din kodningsprocess og blive mere afstemt med dine styling beslutninger, uden at blive påvirket af det visuelle resultat undervejs.
+
+### Ressourcer
+
+Maksimum-bredden for layoutet er 1100px.
+
+**Overskrift:** Building the future
+
+**Tekst:** Spazio Bianco creates the financial foundation that enables ambitious companies to launch their most innovative products. Our customers range from newly established startups to large-scale international businesses, all working together to drive the internet's economic growth. By joining us, you have the opportunity to contribute to this mission.
+
+**Knap:** See all open roles
