@@ -31,14 +31,8 @@ Link-struktur: **citd-1--**[Dit unikke netlify link].netlify.app/
 
 Maksimum-bredden for layoutet er 1100px.
 
-**Overskrift**
+**Overskrift:** `Building the future`
 
-Building the future
+**Tekst:** `Spazio Bianco creates the financial foundation that enables ambitious companies to launch their most innovative products. Our customers range from newly established startups to large-scale international businesses, all working together to drive the internet's economic growth. By joining us, you have the opportunity to contribute to this mission.`
 
-**Tekst**
-
-Spazio Bianco creates the financial foundation that enables ambitious companies to launch their most innovative products. Our customers range from newly established startups to large-scale international businesses, all working together to drive the internet's economic growth. By joining us, you have the opportunity to contribute to this mission.
-
-**Knap**
-
-See all open roles
+**Knap:** `See all open roles`
