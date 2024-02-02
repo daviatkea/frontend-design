@@ -43,4 +43,8 @@ Find linket til din løsning på Netlify og aflever det på Fronter.
 
 Link-struktur: **citd-2--**[Dit unikke netlify link].netlify.app/
 
-**Notér:** Denne opgave er en fantastisk måde at finjustere din kodningsprocess og blive mere afstemt med dine styling beslutninger, uden at blive påvirket af det visuelle resultat undervejs.
+## Ressourcer
+
+Overskrift: `Cassidy Williams`
+
+Tekst: `CTO at Contenda`
