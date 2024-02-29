@@ -35,6 +35,7 @@
 ### Layout
 
 - Grid Breakout ("breakout")
+- Scrolling Container ("scrolling-container")
 
 ### UI Patterns
 
@@ -44,3 +45,7 @@
 
 - Code in the Dark 1 ("citd-1")
 - Code in the Dark 2 ("citd-2")
+
+### Challenges
+
+- Card Expand ("card-expand")
