@@ -30,6 +30,8 @@ Du kan finde hjælp til at løse dele af denne øvelse i følgende:
 - [Flexbox-øvelse](https://exercssises.vinther.codes/flex/#flexbox-11)
 - [Grid-øvelse](https://exercssises.vinther.codes/grid/#grid-07)
 
-## Løsning
+## Aflevering
 
-Du kan finde en løsning på denne udfordring under `/src/components/solution/Card.astro`.
+Find linket til din løsning på Netlify og aflever det på Fronter.
+
+Link-struktur: **scrolling-container--**[Dit unikke netlify link].netlify.app/
