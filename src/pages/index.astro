@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
 
-import Card from "../components/Card.astro";
+import ScrollingContainer from "../components/ScrollingContainer.astro";
 
 import { cardContent } from "../data/card-content.js";
 ---
@@ -12,26 +12,31 @@ import { cardContent } from "../data/card-content.js";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Expand card</title>
+    <title>Scrolling Container</title>
   </head>
   <body>
-    <section>
-      <ul role="list">
-        {cardContent.map((props) => <Card {...props} />)}
-      </ul>
-    </section>
+    <main>
+      <section>
+        <header>
+          <h2>Financial Projections</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </header>
+
+        <ScrollingContainer cardContent={cardContent} />
+      </section>
+    </main>
   </body>
 </html>
 
 <style>
+  main {
+    padding-block: 4rem; /* Kun af æstetiske årsager */
+  }
   section {
-    margin-block: 4rem;
-    display: grid;
-    grid-template-columns: 1fr minmax(0, 75rem) 1fr;
-    column-gap: 1rem;
-
-    > * {
-      grid-column: 2;
-    }
   }
 </style>

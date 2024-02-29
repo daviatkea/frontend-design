@@ -1,22 +1,18 @@
 export const cardContent = [
   {
-    title: "Card 1",
-    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    imgSrc: "/assets/img/image-1.webp",
+    title: "The Balance Sheet",
+    body: "The Balance Sheet is a summary of the assets and liabilities and equity of a business at a specific point of time.",
   },
   {
-    title: "Card 2",
-    body: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    imgSrc: "/assets/img/image-2.webp",
+    title: "Income Statement",
+    body: "The Income (Profit and Loss) Statement, commonly referred to as the P&L statement, summarizes the revenue and expenses for a specific time period (one month, one quarter, one year, etc.)",
   },
   {
-    title: "Card 3",
-    body: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    imgSrc: "/assets/img/image-3.webp",
+    title: "Financial Plan",
+    body: "Keep your information current and review the documents on a regular basis (monthly or more often if needed). Review them with key individuals within your company.",
   },
   {
-    title: "Card 4",
-    body: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    imgSrc: "/assets/img/image-4.webp",
+    title: "Financial Ratios",
+    body: "Ratios are useful when comparing your company with the competition on financial performance and also when benchmarking the performance of your company.",
   },
 ];
