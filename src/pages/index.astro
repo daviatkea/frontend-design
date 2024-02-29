@@ -1,0 +1,37 @@
+---
+import "../styles/global.css";
+
+import Card from "../components/solution/Card.astro";
+
+import { cardContent } from "../data/card-content.js";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Expand card</title>
+  </head>
+  <body>
+    <section>
+      <ul role="list">
+        {cardContent.map((props) => <Card {...props} />)}
+      </ul>
+    </section>
+  </body>
+</html>
+
+<style>
+  section {
+    margin-block: 4rem;
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 75rem) 1fr;
+    column-gap: 1rem;
+
+    > * {
+      grid-column: 2;
+    }
+  }
+</style>

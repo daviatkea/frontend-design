@@ -1,0 +1,11 @@
+@layer reset, exercise;
+
+@import "./reset.css" layer(reset);
+
+
+@layer exercise {
+    body {
+        min-height: 100svh;
+        font-family: system-ui, sans-serif;
+    }
+}
