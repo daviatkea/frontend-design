@@ -18,12 +18,12 @@ Du skal også sætte styles op for det overordnede layout via `section` på `ind
 
 Projektet inkluderer følgende custom properties, som du med fordel kan bruge:
 
-`--content-width` – indholdets bredde
-`--card-padding` – kortenes padding
-`--card-gap` – afstanden mellem kortene
-`--card-border-radius` – kortenes border-radius
-`--card-background` – kortenes baggrundsfarve
-`--card-text-color` – kortenes tekstfarve
+- `--content-width` – indholdets bredde
+- `--card-padding` – kortenes padding
+- `--card-gap` – afstanden mellem kortene
+- `--card-border-radius` – kortenes border-radius
+- `--card-background` – kortenes baggrundsfarve
+- `--card-text-color` – kortenes tekstfarve
 
 Du kan finde hjælp til at løse dele af denne øvelse i følgende:
 
