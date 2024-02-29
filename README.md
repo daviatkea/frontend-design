@@ -1,5 +1,8 @@
 # Design for Developers - Opgaver
 
+> [!IMPORTANT]  
+> Følg instruktionerne, før du kloner.
+
 ## Instruktioner
 
 <details>
