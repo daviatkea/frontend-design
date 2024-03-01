@@ -14,7 +14,8 @@ Du skal arbejde med denne branch, som er sat op med Astro-projekt. Indholdet er 
 
 - Udfordre dig selv til at anvende din viden om CSS.
 
-**Bemærk, at denne branch allerede inkluderer et CSS Reset.**
+> [!NOTE]  
+> **Bemærk, at denne branch allerede inkluderer et CSS Reset.**
 
 ## Hints
 
