@@ -1,0 +1,197 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+:not(progress, meter) {
+    border-style: solid;
+    border-width: 0;
+}
+
+html {
+    font-family: system-ui, sans-serif;
+    font-feature-settings: "pnum";
+    font-variant-numeric: tabular-nums;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin: unset;
+    min-height: 100svh;
+}
+
+ol[role="list"],
+ul[role="list"] {
+    list-style: none;
+    padding: 0;
+}
+
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+h1,
+h2,
+button,
+input,
+label {
+    line-height: 1.1;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+a[class]:any-link {
+    color: currentColor;
+    text-decoration: none;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+hr {
+    border-style: solid;
+    border-width: 1px 0 0;
+    color: inherit;
+    height: 0;
+    overflow: visible;
+}
+
+
+svg,
+canvas,
+audio,
+iframe,
+img,
+picture,
+video {
+    inline-size: 100%;
+    display: block;
+}
+
+img,
+svg,
+video,
+canvas {
+    block-size: auto;
+}
+
+audio:not([controls]) {
+    display: none;
+}
+
+audio {
+    width: 100%;
+}
+
+picture {
+    display: contents;
+}
+
+source {
+    display: none;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    inline-size: 100%;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+}
+
+legend {
+    padding: 0;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    border-radius: 0;
+    color: inherit;
+    background: transparent;
+    font-size: max(1em, 16px);
+}
+
+button * {
+    pointer-events: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+}
+
+textarea:not([rows]) {
+    min-height: 10em;
+}
+
+:target {
+    scroll-margin-block: 2rlh;
+}
+
+
+
+[hidden] {
+    display: none !important;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    ::before,
+    ::after {
+        transition-duration: .01s !important;
+        animation-iteration-count: 1 !important;
+        animation: .01s !important;
+    }
+}

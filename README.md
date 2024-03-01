@@ -52,3 +52,9 @@
 ### Challenges
 
 - Card Expand ("card-expand")
+
+## Ressourcer
+
+- [CSS Reset](/resources/reset.css)
+- [CSS Patterns](/resources/patterns.md) (Opdateres løbende...)
+- [CSS Anti-Patterns](/resources/anti-patterns.md) (Opdateres løbende...)
