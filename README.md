@@ -20,7 +20,8 @@ Anvend den udleverede guide til at revidere det eksisterende design.
 2. Arbejd med eksisterende CSS
 3. Tilret CSS for at forbedre designet ud fra designpricipperne i guiden
 
-**Bemærk, at denne branch IKKE inkluderer et CSS Reset.**
+> [!WARNING]  
+> **Bemærk, at denne branch IKKE inkluderer et CSS Reset.**
 
 ## Aflevering
 
