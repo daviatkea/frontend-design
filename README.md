@@ -35,7 +35,8 @@ Sæt denne kode ind på det sted i HTML-dokumentet, hvor du vil have ikonet til 
 - Udfordre dig selv til at anvende din viden om CSS for at bygge et layout "i blinde".
 - Bliv mere selvsikker i dit arbejde med HTML og CSS uden direkte feedback.
 
-**Bemærk, at denne branch allerede inkluderer et CSS Reset.**
+> [!NOTE]  
+> **Bemærk, at denne branch allerede inkluderer et CSS Reset.**
 
 ## Aflevering
 
