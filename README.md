@@ -14,7 +14,20 @@ At forbedre den visuelle præsentation af tekstindhold ved at anvende principper
 
 Du skal arbejde med denne branch, som indeholder et HTML-dokuement med hovedoverskrifter, underoverskrifter, paragraffer, billeder og andre typografiske elementer. Brug "style.css" til at tilføje typografiske og farvemæssige forbedringer til indholdet.
 
-Anvend så vidt muligt de udleverede tips og teknikker til at revidere den eksisterende typografi og farveskema. Fokuser på en god typografiskala til at skabe kontrast og hierarki mellem overskrifter og brødtekst og forbedr den vertikale rytme i dit indhold ved at justere linjehøjden, hvor det er passende.
+Anvend så vidt muligt ovenstående ressourcer til at revidere den eksisterende typografi og farveskema. Fokuser på en god typografiskala til at skabe kontrast og hierarki mellem overskrifter og brødtekst og forbedr den vertikale rytme i dit indhold ved at justere linjehøjden, hvor det er passende.
+
+Der er følgende farver til rådighed som custom properties:
+
+- `--gray-50: #f9fafb;`
+- `--gray-100: #f3f4f6;`
+- `--gray-200: #e5e7eb;`
+- `--gray-300: #d1d5db;`
+- `--gray-400: #9ca3af;`
+- `--gray-500: #6b7280;`
+- `--gray-600: #4b5563;`
+- `--gray-700: #374151;`
+- `--gray-800: #1f2937;`
+- `--gray-900: #111827;`
 
 ### Specifikke mål
 
