@@ -23,7 +23,8 @@ Anvend så vidt muligt de udleverede tips og teknikker til at revidere den eksis
 3. Juster farven på brødtekst for at sikre, at overskrifter skiller sig ud, og overvej at bruge en lettere farve for at reducere visuel vægt af mindre vigtig tekst – brug de medfølgende gråtoner (i :root).
 4. Øg linjehøjden for at forbedre læsbarheden, baseret på skriftstørrelse og tekstens tæthed.
 
-**Bemærk, at denne branch allerede inkluderer et CSS Reset.**
+> [!NOTE]  
+> **Bemærk, at denne branch allerede inkluderer et CSS Reset.**
 
 Du forventes at tage stilling til skriftstørrelser, linjeafstand, marginer, og farveværdier i din løsning.
 
