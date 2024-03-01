@@ -12,7 +12,8 @@ Du skal arbejde med denne branch, som er sat op med Astro-projekt. Indholdet er 
 
 Du skal også sætte styles op for det overordnede layout via `section` på `index.astro`, hvori `<ScrollingContainer />` er placeret.
 
-**Bemærk, at denne branch allerede inkluderer et CSS Reset.**
+> [!NOTE]  
+> **Bemærk, at denne branch allerede inkluderer et CSS Reset.**
 
 ## Ressourcer
 
