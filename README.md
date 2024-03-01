@@ -47,7 +47,7 @@ Find link til din løsning på Netlify og aflever det på Fronter.
 
 Link-struktur: **text-styling--**[Dit unikke netlify link].netlify.app/
 
-Din løsning vil blive bedømt på dens evne til at forbedre læsbarheden og visuel tiltrækning af indholdet, effektiv brug af genererede skalaer og hierarkiske farvetoner.
+Din løsning vil blive bedømt på dens evne til at forbedre læsbarheden af indholdet samt effektiviteten af brugen af genererede skalaer og hierarkiske farvetoner.
 
 ## Tips
 
