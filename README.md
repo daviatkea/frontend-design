@@ -24,7 +24,8 @@ Se billedet for reference.
 
 ![Billede](./assets/reference.png)
 
-**Bemærk, at denne branch IKKE inkluderer et CSS Reset.**
+> [!WARNING]  
+> **Bemærk, at denne branch IKKE inkluderer et CSS Reset.**
 
 ### Specifikke mål
 
