@@ -25,7 +25,8 @@ Billeder skal fylde viewportens bredde.
 - Forstå, hvordan CSS Grid hælper med at lave fleksible layouts.
 - Arbejde med og ændre eksisterende CSS
 
-**Bemærk, at denne branch allerede inkluderer et CSS Reset.**
+> [!NOTE]  
+> **Bemærk, at denne branch allerede inkluderer et CSS Reset.**
 
 ## Aflevering
 
