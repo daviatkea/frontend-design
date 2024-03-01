@@ -8,7 +8,11 @@ Formålet med denne øvelse er at skærpe din evne til at visualisere det ønske
 
 Du skal arbejde med denne branch, som indeholder en HTML-side, en CSS-fil og diverse billeder, som du skal bruge til at kode nedenstående layout.
 
-Forsøg at matche layoutet og sigt efter 80%-90% match.
+Forsøg at matche layoutet og sigt efter 80%-90% match (dvs. de små detaljer er ikke vigtige).
+
+> [!IMPORTANT]
+
+**_"Skal det være responsivt?"_** — Ja. Derfor skal du også tænke på, hvordan layoutet skal se ud på mindre skærme i din kode.
 
 Der er et overlay, der skjuler resultatet af dit arbejde undervejs. Når du føler dig klar til at afsløre dit design, skal du ændre værdien af `--hide-overlay` til '1' i :root-sektionen i CSS-filen. Dette vil fjerne overlayet og afsløre resultatet af dit arbejde.
 
