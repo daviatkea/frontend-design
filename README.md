@@ -1,5 +1,7 @@
 # **Card UI**
 
+![UI Design Rules](/assets/card.png)
+
 ## Formål
 
 At forbedre den visuelle præsentation af et Card UI ved at anvende funktionelle designprincipper. Denne opgave opfordrer dig til at være opmærksom på detaljerne i din styling for at maksimere både æstetikken og læsbarheden.
