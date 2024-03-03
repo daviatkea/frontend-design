@@ -1,6 +1,6 @@
 # Patterns
 
-Page Layout
+Simple Page Layout
 
 ```css
 :root {
@@ -18,6 +18,22 @@ main {
   .full {
     grid-column: 1 / -1;
   }
+}
+```
+
+Multiple Column Page Layout
+
+```css
+.content {
+  --content: min(50ch, 100% - 1rem * 2);
+
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(1rem, 1fr)
+    [feature-start] minmax(0, 2rem)
+    [content-start] var(--content) [content-end]
+    minmax(0, 2rem) [feature-end]
+    minmax(1rem, 1fr) [full-end];
 }
 ```
 
