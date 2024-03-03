@@ -12,9 +12,9 @@ At lave et layout, der gør det muligt at lave 'breakouts' - elementer, der bryd
 
 ## Opgavebeskrivelse
 
-Du skal arbejde med denne branch, som indeholder et HTML-dokuement med overskrifter, paragraffer, et citat og et billede. Din opgave er at anvende CSS Grid, i stedet for den nuværende teknik, til at lave et fleksibelt breakout-layout, hvor elementer som citatblokke og billeder strækker sig ud over deres sædvanlige containerbredde.
+Du skal arbejde med denne branch, som indeholder et HTML-dokuement med overskrifter, paragraffer, et citat og et billede. Din opgave er at anvende CSS Grid, i stedet for den teknik, der er anvendt i `style.css`, til at lave et fleksibelt breakout-layout, hvor elementer som citatblokke og billeder strækker sig ud over deres sædvanlige containerbredde.
 
-Du skal navngive dine grid-linjer, så du nemmere kan placere diverse elementer i grid'et.
+Du skal navngive dine grid-linjer, så du nemmere kan placere diverse elementer i grid'et (se teknikken under "Ressourcer").
 
 Citatblokken skal udvide sig ud over den normale indholdskolonne – du bestemmer selv, hvor meget.
 
