@@ -31,6 +31,16 @@ Du kan finde hjælp til at løse dele af denne øvelse i følgende:
 - [Flexbox-øvelse](https://exercssises.vinther.codes/flex/#flexbox-11)
 - [Grid-øvelse](https://exercssises.vinther.codes/grid/#grid-07)
 
+## Ekstra udfordring (valgfri)
+
+Brug Scroll Snap til at kontrollere, hvor meget der scrolles ad gangen samt hvor kortene stopper.
+
+Hints:
+
+- `scroll-snap-type`
+- `scroll-snap-align`
+- `scroll-snap-stop`
+
 ## Aflevering
 
 Find linket til din løsning på Netlify og aflever det på Fronter.
