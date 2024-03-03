@@ -2,7 +2,7 @@
 
 ## Formål
 
-At forstå og implementere flow space-teknikken til at håndtere vertikale afstande mellem elementer i et dokument, baseret på en effektiv CSS-teknik beskrevet af Andy Bell på Piccalilli. Denne teknik anvender CSS Custom Properties til at skabe et fleksibelt og vedligeholdelsesvenligt design.
+At forstå og implementere flow space-teknikken til at håndtere vertikale afstande mellem elementer (typisk ifm. tekst) i et dokument, baseret på en effektiv CSS-teknik beskrevet af Andy Bell på Piccalilli. Denne teknik anvender CSS Custom Properties til at skabe et fleksibelt og vedligeholdelsesvenligt design.
 
 ## **Ressourcer**
 
