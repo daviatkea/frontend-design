@@ -1,5 +1,7 @@
 # Patterns
 
+Se en oversigt over nogle a nedenstående patterns på [Codepen](https://codepen.io/collection/pgYZjB).
+
 Simple Page Layout
 
 ```css
@@ -78,3 +80,60 @@ Text Spacing
 ```
 
 Equal Spacing
+
+```css
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+```
+
+## Selectors
+
+Vælg det første liste-element, hvis det samtidigt er ulige, når man tæller fra slutningen af listen.
+
+```css
+li:nth-last-child(odd):first-child {
+  ...;
+}
+```
+
+Vælg det andet barn i listen af elementer med klassen `.featured`
+
+```css
+:nth-child(2 of .featured) {
+  ...;
+}
+```
+
+Vælg sektioner med kun ét barn
+
+```css
+section:has(> :only-child) {
+  ...;
+}
+```
+
+Vælg sektioner med mindst 5 børn
+
+```css
+section:has(> :nth-child(5)) {
+  ...;
+}
+```
+
+Vælg sektioner med tre børn (vælger ikke sektioner med ét eller to børn)
+
+```css
+section:has(> :nth-last-child(3):first-child) {
+  ...;
+}
+```
+
+Vælg sektioner, der udelukkende indeholder artikler som direkte børn
+
+```css
+section:not(:has(> :not(article))) {
+  ...;
+}
+```
