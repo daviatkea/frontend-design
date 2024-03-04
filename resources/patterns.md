@@ -44,7 +44,7 @@ Grid Pile
   display: grid;
 
   > * {
-    grid-area: 1 / -1;
+    grid-area: 1 / 1;
   }
 }
 ```
