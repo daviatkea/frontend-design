@@ -15,8 +15,7 @@
 }
 .card:has(img) {
   padding: 0;
-  & p,
-  & h3 {
+  & .content {
     padding: 1rem;
   }
 }
