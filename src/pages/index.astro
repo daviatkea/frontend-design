@@ -1,9 +1,9 @@
 ---
 import "../styles/global.css";
 
-import ScrollingContainer from "../components/ScrollingContainer.astro";
+import Timeline from "../components/Timeline.astro";
 
-import { cardContent } from "../data/card-content.js";
+import { data } from "../data/card-content.js";
 ---
 
 <html lang="en">
@@ -12,31 +12,17 @@ import { cardContent } from "../data/card-content.js";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Scrolling Container</title>
+    <title>Timeline</title>
   </head>
   <body>
     <main>
-      <section>
-        <header>
-          <h2>Financial Projections</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </header>
-
-        <ScrollingContainer cardContent={cardContent} />
-      </section>
+      <Timeline {data} />
     </main>
   </body>
 </html>
 
 <style>
   main {
-    padding-block: 4rem; /* Kun af æstetiske årsager */
-  }
-  section {
+    padding: 2rem 1rem;
   }
 </style>

@@ -1,0 +1,42 @@
+---
+import Card from "./Card.astro";
+
+const { data } = Astro.props;
+---
+
+<article>
+  {
+    data.map(({ year, months }) => (
+      <section>
+        <h2>{year}</h2>
+
+        {months.map(({ month, cards }) => (
+          <div>
+            <p>{month}</p>
+            {cards.map((props) => (
+              <Card {...props} />
+            ))}
+          </div>
+        ))}
+      </section>
+    ))
+  }
+</article>
+
+<style>
+  @layer components {
+    h2 {
+      font-size: 1.35rem;
+      line-height: var(--space-1);
+      color: #f5f5f7;
+    }
+
+    p {
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: #909194;
+      margin-top: 1rem;
+      width: fit-content;
+    }
+  }
+</style>

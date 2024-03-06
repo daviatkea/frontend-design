@@ -1,0 +1,24 @@
+---
+const { title, content } = Astro.props;
+---
+
+<div class="card">
+  <h3>{title}</h3>
+  <p>{content}</p>
+</div>
+
+<style>
+  @layer components {
+    .card {
+      padding: 1rem;
+      background: #272829;
+      grid-column: 2;
+      border-radius: 8px;
+      box-shadow:
+        0 -1px 1px #fff2,
+        0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      color: #909194;
+    }
+  }
+</style>

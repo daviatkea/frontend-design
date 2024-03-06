@@ -1,16 +1,12 @@
-@layer reset, exercise;
+@layer reset, global, components;
 
 @import "./reset.css" layer(reset);
 
 
-@layer exercise {
-    :root {
-        --content-width: 50rem;
-        --card-padding: 2.75rem 2.1875rem;
-        --card-gap: 1rem;
-        --card-border-radius: 8px;
-        --card-background: #EBEBEB;
-        --card-text-color: #595566;
+@layer global {
+    html {
+        background: #19181A;
+        color: #fefefe;
     }
 
     body {
@@ -20,17 +16,17 @@
 
     h2,
     h3 {
-        color: #181818;
         margin-block: 0 0.625rem;
         line-height: 1.125;
+        color: #F5F5F7;
     }
 
     h2 {
-        font-size: 2.8125rem;
+        font-size: 1.35rem;
     }
 
     h3 {
-        font-weight: 700;
-        font-size: 1.5625rem;
+        font-weight: 600;
+        font-size: 1.125rem;
     }
 }
