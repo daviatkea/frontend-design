@@ -1,4 +1,4 @@
-# Design for Developers - Opgaver
+# Frontend Design - Opgaver
 
 > [!IMPORTANT]  
 > Følg instruktionerne, før du kloner.
