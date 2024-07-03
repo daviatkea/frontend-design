@@ -52,6 +52,7 @@
 ### Challenges
 
 - Card Expand ("card-expand")
+- Sticky Labels ("sticky-labels")
 
 ## Ressourcer
 
