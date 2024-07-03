@@ -1,4 +1,4 @@
-# **Card Expand Challenge**
+# **Sticky Labels Challenge**
 
 ![Sticky Labels Challenge](readmeassets/sticky-labels.gif)
 
