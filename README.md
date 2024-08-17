@@ -1,28 +1,26 @@
-# **Grid Breakout**
+# **Subgrid card**
 
-![Breakout blueprint](./assets/breakout1.png)
+![Subgrid Card](./assets/subgrid-card.jpg)
 
 ## Formål
 
-At lave et layout, der gør det muligt at lave 'breakouts' - elementer, der bryder ud af sidens maksimumbredde for at skabe et dynamisk layout.
+At forstå og anvende CSS Subgrid til at skabe et card-layout, hvor visuelle elementer, såsom billeder, kan bryde ud af kortets traditionelle rammer for at skabe et mere dynamisk og engagerende design.
 
 ## Ressourcer
 
-- [Layout breakouts teknik](https://ryanmulligan.dev/blog/layout-breakouts/)
+- [Subgrid Øvelser](https://exercssises.vercel.app/subgrid)
 
 ## Opgavebeskrivelse
 
-Du skal arbejde med denne branch, som indeholder et HTML-dokuement med overskrifter, paragraffer, et citat og et billede. Din opgave er at anvende CSS Grid, i stedet for den teknik, der er anvendt i `style.css`, til at lave et fleksibelt breakout-layout, hvor elementer som citatblokke og billeder strækker sig ud over deres sædvanlige containerbredde.
+Du skal arbejde med denne branch, som indeholder et HTML-dokument med et card-layout, der indeholder tekst og billede. Din opgave er at anvende CSS Subgrid til at organisere layoutet, så det bliver muligt at lade billedet bryde ud af kortets rammer.
 
-Du skal navngive dine grid-linjer, så du nemmere kan placere diverse elementer i grid'et (se teknikken under "Ressourcer").
+Subgrid skal bruges til at definere layoutet, hvor under-elementer arver grid-strukturen fra deres overordnede container. Dette giver dig mulighed for mere præcist at kontrollere, hvordan elementer placeres i forhold til hinanden og i forhold til det overordnede layout.
 
-Citatblokken skal udvide sig ud over den normale indholdskolonne – du bestemmer selv, hvor meget.
-
-Billeder skal fylde viewportens bredde.
+![Subgrid Card - blueprint](./assets/subgrid-card-wireframe.jpg)
 
 ### Specifikke mål
 
-- Forstå, hvordan CSS Grid hælper med at lave fleksible layouts.
+- Forstå, hvordan CSS Subgrid kan bruges til at opnå præcis kontrol over layout af nested elementer.
 - Arbejde med og ændre eksisterende CSS
 
 > [!NOTE]  
@@ -32,6 +30,4 @@ Billeder skal fylde viewportens bredde.
 
 Find linket til din løsning på Netlify og aflever det på Fronter.
 
-Link-struktur: **breakout--**[Dit unikke netlify link].netlify.app/
-
-![Solution](./assets/breakout2.png)
+Link-struktur: **subgrid-card--**[Dit unikke netlify link].netlify.app/
