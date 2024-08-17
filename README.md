@@ -39,6 +39,7 @@
 
 - Grid Breakout ("breakout")
 - Scrolling Container ("scrolling-container")
+- Subgrid Card ("subgrid-card")
 
 ### UI Patterns
 
