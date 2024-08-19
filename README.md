@@ -10,7 +10,7 @@ Formålet med denne opgave er at anvende CSS Subgrid til at få "børnebørn" ti
 
 ## Opgavebeskrivelse
 
-Du skal arbejde med denne branch, som indeholder et HTML-dokument med en billedsektion samt et stylesheet med tilhørende styles. Din opgave er at anvende CSS Grid og Subgrid til at placere tekstindholdet og billedteksten, så de flugter.
+Du skal arbejde med denne branch, som indeholder et HTML-dokument med en billedsektion samt et stylesheet med tilhørende styles. Din opgave er at anvende CSS Grid og Subgrid til at placere tekstindholdet og billedteksten, så de flugter med hindanden som på billedet nedenfor.
 
 ![Subgrid Caption](./assets/subgrid-caption.png)
 
