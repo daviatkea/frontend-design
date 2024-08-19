@@ -16,11 +16,11 @@ Du skal arbejde med denne branch, som indeholder et HTML-dokument med en billeds
 
 ![Subgrid Caption - Grid](./assets/sb-grid.png)
 
-Du skal implementere Subgrid på `figure`-elementet for både rækkerne og kolonnerne, så dets børnebørn (img og figcaption) arver grid-strukturen fra forælderen.
+Du skal implementere Subgrid på `figure`-elementet for både rækkerne og kolonnerne, så dets børnebørn (`img` og `figcaption`) arver grid-strukturen fra forælderen.
 
 Bemærk, at det kan være nødvendigt at placere elementerne eksplicit i grid'et (altså både `grid-column` og `grid-row`).
 
-Du skal også sikre, at layoutet er responsivt, således at for mindre skærme (under `600px`) justeres layoutet til at være stakket vertikalt.
+Du skal også sikre, at layoutet er responsivt, så det tilpasses mindre skærme (under `600px`) ved at ændre det til en enkelt kolonne.
 
 ![Mobil-layout](./assets/sb-responsive_.png)
 
