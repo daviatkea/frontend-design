@@ -22,7 +22,7 @@ Bemærk, at det kan være nødvendigt at placere elementerne eksplicit i grid'et
 
 Du skal også sikre, at layoutet er responsivt, således at for mindre skærme (under `600px`) justeres layoutet til at være stakket vertikalt.
 
-![Mobil-layout](./assets/sb-responsive.png)
+![Mobil-layout](./assets/sb-responsive_.png)
 
 ### Specifikke mål
 
