@@ -32,6 +32,11 @@ Du skal også sikre, at layoutet er responsivt, således at for mindre skærme (
 > [!NOTE]  
 > **Bemærk, at denne branch allerede inkluderer et CSS Reset.**
 
+## Ekstra udfordring (valgfri)
+
+- Navngiv grid-linjerne for at gøre placeringen af diverse elementer nemmere.
+- Ressource: [MDN](https://developer.mozilla.org/en-US/docs/Glossary/Grid_Lines#naming_lines)
+
 ## Aflevering
 
 Find linket til din løsning på Netlify og aflever det på Fronter.
