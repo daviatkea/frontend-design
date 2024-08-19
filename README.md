@@ -34,8 +34,9 @@ Du skal også sikre, at layoutet er responsivt, således at for mindre skærme (
 
 ## Ekstra udfordring (valgfri)
 
-- Navngiv grid-linjerne for at gøre placeringen af diverse elementer nemmere.
-- Ressource: [MDN](https://developer.mozilla.org/en-US/docs/Glossary/Grid_Lines#naming_lines)
+Navngiv grid-linjerne for at gøre placeringen af diverse elementer nemmere. På den måde kan du referere til linjerne ved navn i stedet for tal. Fx `.content { grid-area: content; }` og `figcaption { grid-area: caption; }`.
+
+Lær mere om det på [MDN](https://developer.mozilla.org/en-US/docs/Glossary/Grid_Lines#naming_lines).
 
 ## Aflevering
 
