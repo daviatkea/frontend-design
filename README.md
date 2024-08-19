@@ -1,10 +1,8 @@
-# **Subgrid card**
-
-![Subgrid Card](./assets/subgrid-card.jpg)
+# **Subgrid Caption**
 
 ## Formål
 
-At forstå og anvende CSS Subgrid til at skabe et card-layout, hvor visuelle elementer, såsom billeder, kan bryde ud af kortets traditionelle rammer for at skabe et mere dynamisk og engagerende design.
+Formålet med denne opgave er at anvende CSS Subgrid til at få "børnebørn" til at deltage i et overordnet grid.
 
 ## Ressourcer
 
@@ -12,11 +10,19 @@ At forstå og anvende CSS Subgrid til at skabe et card-layout, hvor visuelle ele
 
 ## Opgavebeskrivelse
 
-Du skal arbejde med denne branch, som indeholder et HTML-dokument med et card-layout, der indeholder tekst og billede. Din opgave er at anvende CSS Subgrid til at organisere layoutet, så det bliver muligt at lade billedet bryde ud af kortets rammer.
+Du skal arbejde med denne branch, som indeholder et HTML-dokument med en billedsektion samt et stylesheet med tilhørende styles. Din opgave er at anvende CSS Subgrid til at placere billedteksten, så den flugter med den øvrige tekst i det overordnede grid.
 
-Subgrid skal bruges til at definere layoutet, hvor under-elementer arver grid-strukturen fra deres overordnede container. Dette giver dig mulighed for mere præcist at kontrollere, hvordan elementer placeres i forhold til hinanden og i forhold til det overordnede layout.
+![Subgrid Caption](./assets/subgrid-caption.png)
 
-![Subgrid Card - blueprint](./assets/subgrid-card-wireframe.jpg)
+![Subgrid Caption - Grid](./assets/sb-grid.png)
+
+> [NOTE] Du må ikke ændre i HTML'en.
+
+Du skal implementere Subgrid på `figure`-elementet, så dets børnebørn (img og figcaption) arver grid-strukturen fra forælderen.
+
+Du skal også sikre, at layoutet er responsivt, således at for mindre skærme (under `600px`) justeres layoutet til at være stakket vertikalt.
+
+![Mobil-layout](./assets/sb-responsive.png)
 
 ### Specifikke mål
 
@@ -30,4 +36,4 @@ Subgrid skal bruges til at definere layoutet, hvor under-elementer arver grid-st
 
 Find linket til din løsning på Netlify og aflever det på Fronter.
 
-Link-struktur: **subgrid-card--**[Dit unikke netlify link].netlify.app/
+Link-struktur: **subgrid-caption--**[Dit unikke netlify link].netlify.app/
