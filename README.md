@@ -6,7 +6,7 @@ Formålet med denne opgave er at anvende CSS Subgrid til at få "børnebørn" ti
 
 ## Ressourcer
 
-- [Subgrid Øvelser](https://exercssises.vercel.app/subgrid)
+- [Subgrid øvelser](https://exercssises.vercel.app/subgrid)
 
 ## Opgavebeskrivelse
 
