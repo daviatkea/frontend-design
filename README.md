@@ -10,15 +10,15 @@ Formålet med denne opgave er at anvende CSS Subgrid til at få "børnebørn" ti
 
 ## Opgavebeskrivelse
 
-Du skal arbejde med denne branch, som indeholder et HTML-dokument med en billedsektion samt et stylesheet med tilhørende styles. Din opgave er at anvende CSS Subgrid til at placere billedteksten, så den flugter med den øvrige tekst i det overordnede grid.
+Du skal arbejde med denne branch, som indeholder et HTML-dokument med en billedsektion samt et stylesheet med tilhørende styles. Din opgave er at anvende CSS Grid og Subgrid til at placere tekstindholdet og billedteksten, så de flugter.
 
 ![Subgrid Caption](./assets/subgrid-caption.png)
 
 ![Subgrid Caption - Grid](./assets/sb-grid.png)
 
-> [NOTE] Du må ikke ændre i HTML'en.
-
 Du skal implementere Subgrid på `figure`-elementet, så dets børnebørn (img og figcaption) arver grid-strukturen fra forælderen.
+
+Bemærk, at det kan være nødvendigt at placere elementerne eksplicit i grid'et (altså både `grid-column` og `grid-row`).
 
 Du skal også sikre, at layoutet er responsivt, således at for mindre skærme (under `600px`) justeres layoutet til at være stakket vertikalt.
 
