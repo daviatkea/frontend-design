@@ -8,7 +8,7 @@ At forstå og anvende CSS Subgrid til at skabe et card-layout, hvor visuelle ele
 
 ## Ressourcer
 
-- [Subgrid Øvelser](https://exercssises.vercel.app/subgrid)
+- [Subgrid øvelser](https://exercssises.vercel.app/subgrid)
 
 ## Opgavebeskrivelse
 
