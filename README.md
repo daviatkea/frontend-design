@@ -41,6 +41,7 @@
 - Scrolling Container ("scrolling-container")
 - Subgrid Caption ("subgrid-caption")
 - Subgrid Card ("subgrid-card")
+- Responsive Container ("responsive-container")
 
 ### UI Patterns
 
