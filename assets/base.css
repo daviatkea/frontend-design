@@ -1,21 +1,41 @@
-:root {
-    --gray-100: hsl(0, 0%, 95%);
-    --gray-200: hsl(0, 0%, 92%);
-    --gray-300: hsl(0, 0%, 90%);
-    --gray-400: hsl(0, 0%, 85%);
-    --gray-500: hsl(0, 0%, 79%);
-    --gray-600: hsl(0, 0%, 66%);
-    --gray-700: hsl(0, 0%, 56%);
-    --gray-800: hsl(0, 0%, 49%);
-    --gray-900: hsl(0, 0%, 43%);
-    --gray-1000: hsl(0, 0%, 9%);
-}
+@layer demo {
 
-body {
-    min-height: 100svh;
-    font-family: system-ui, sans-serif;
-    display: flex;
-    place-content: center;
-    place-items: center;
-    line-height: 1.5;
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr minmax(0px, 1200px) 1fr;
+        gap: 1rlh;
+        padding-block: 1rlh;
+        font-family: system-ui;
+        line-height: 1.5;
+
+        >* {
+            grid-column: 2;
+        }
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    img {
+        inline-size: 100%;
+        display: block;
+        object-fit: cover;
+        align-self: stretch;
+        aspect-ratio: 1.3;
+    }
+
+    h1,
+    h2,
+    h3 {
+        line-height: 1.125;
+    }
 }

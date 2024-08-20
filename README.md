@@ -1,45 +1,51 @@
-# **Subgrid Caption**
+# **Responsive Container**
 
 ## Formål
 
-Formålet med denne opgave er at anvende CSS Subgrid til at få "børnebørn" til at deltage i et overordnet grid.
+Formålet med denne opgave er at give dig en forståelse af, hvordan container queries kan bruges til at skabe fleksible og adaptive layouts, der tilpasser sig forskellige containerstørrelser. Du skal udforske, hvordan container queries kan ændre layoutet afhængigt af containerens bredde.
 
 ## Ressourcer
 
-- [Subgrid øvelser](https://exercssises.vercel.app/subgrid)
+- [Getting started with container queries](https://developer.mozilla.org/en-US/blog/getting-started-with-css-container-queries/)
 
 ## Opgavebeskrivelse
 
-Du skal arbejde med denne branch, som indeholder et HTML-dokument med en billedsektion samt et stylesheet med tilhørende styles. Din opgave er at anvende CSS Grid og Subgrid til at placere tekstindholdet og billedteksten, så de flugter med hindanden som på billedet nedenfor.
+Du skal arbejde med denne branch, som indeholder et HTML-dokument og en tilhørende stylesheet, der er delvist implementeret. I denne opgave skal du færdiggøre implementeringen ved at følge de kommentarer, der allerede er tilføjet i CSS-filen (se, hvordan det skal ende nederst).
 
-![Subgrid Caption](./assets/subgrid-caption.png)
+Identificer de elementer, der skal fungere som containere, og anvend `container-type: inline-size`. Dette vil gøre det muligt at anvende container queries på disse elementer.
 
-![Subgrid Caption - Grid](./assets/sb-grid.png)
+Når `ul`-containerens bredde overstiger `700px`, skal du ændre layoutet:
 
-Du skal implementere Subgrid på `figure`-elementet for både rækkerne og kolonnerne, så dets børnebørn (`img` og `figcaption`) arver grid-strukturen fra forælderen.
+- Indstil `ul` til at vise to kolonner.
+- Sørg for, at det første barn spænder over begge kolonner ved at bruge `grid-column: span 2`.
 
-Bemærk, at det kan være nødvendigt at placere elementerne eksplicit i grid'et (altså både `grid-column` og `grid-row`).
+Brug container queries til at ændre layoutet af `article`, når containerens bredde overstiger `500px`:
 
-Du skal også sikre, at layoutet er responsivt, så det tilpasses mindre skærme (under `600px`) ved at ændre det til en enkelt kolonne.
+- Indstil `article` til at have to kolonner.
+- For hvert andet `article`-element skal du sætte `order: 1;` på billedet (`img`) for at ændre rækkefølgen af indholdet.
 
-![Mobil-layout](./assets/sb-responsive_.png)
+Når du har implementeret ovenstående ændringer, eksperimenter med at ændre størrelsen på containere for at observere, hvordan layoutet dynamisk tilpasser sig.
 
 ### Specifikke mål
 
-- Forstå, hvordan CSS Subgrid kan bruges til at opnå præcis kontrol over layout af nested elementer.
+- Forstå, hvordan container queries kan forbedre både brugeroplevelsen og udvikleroplevelsen ved at skabe mere fleksible og kontekstsensitive layouts, der automatisk tilpasser sig forskellige containerstørrelser.
 - Arbejde med og ændre eksisterende CSS
 
 > [!NOTE]  
-> **Bemærk, at denne branch allerede inkluderer et CSS Reset.**
-
-## Ekstra udfordring (valgfri)
-
-Navngiv grid-linjerne for at gøre placeringen af diverse elementer nemmere. På den måde kan du referere til linjerne ved navn i stedet for tal. Fx `.content { grid-area: content; }` og `figcaption { grid-area: caption; }`.
-
-Lær mere om det på [MDN](https://developer.mozilla.org/en-US/docs/Glossary/Grid_Lines#naming_lines).
+> **Bemærk, at denne branch inkluderer et lille CSS Reset.**
 
 ## Aflevering
 
 Find linket til din løsning på Netlify og aflever det på Fronter.
 
-Link-struktur: **subgrid-caption--**[Dit unikke netlify link].netlify.app/
+Link-struktur: **responsive-container--**[Dit unikke netlify link].netlify.app/
+
+![c1](./assets/c1.png)
+
+![c2](./assets/c2.png)
+
+![c3](./assets/c3.png)
+
+![c4](./assets/c4.png)
+
+![c5](./assets/c5.png)
