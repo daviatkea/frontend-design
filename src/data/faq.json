@@ -1,0 +1,40 @@
+[
+  {
+    "id": "faq-1",
+    "question": "Hvornår kan jeg forvente at modtage mit årsbrev?",
+    "answer": [
+      "Du vil modtage brevet i Digital Post senest 10. december 2022. Er du ikke tilmeldt Digital Post, vil du modtage brevet per post senest 16. december 2022.",
+      "Hvis du ikke har modtaget dit <a href='#0'>årsbrev</a> inden for de nævnte datoer, kan du kontakte Skattestyrelsen på telefon 72 22 18 18."
+    ]
+  },
+  {
+    "id": "faq-2",
+    "question": "Hvordan læser jeg mit årsbrev?",
+    "answer": [
+      "Du kan åbne denne læsevejledning, hvis du vil se, hvad beløbene i dit årsbrev betyder."
+    ],
+    "linkBlock": {
+      "label": "Læsevejledning - årsbrevet 2022",
+      "url": "https://www.skat.dk/SKAT.aspx?oId=2236077&vId=0"
+    }
+  },
+  {
+    "id": "faq-3",
+    "question": "Hvornår kan jeg forvente at modtage mit årsbrev?",
+    "answer": [
+      "Du vil modtage brevet i Digital Post senest 10. december 2022. Er du ikke tilmeldt Digital Post, vil du modtage brevet per post senest 16. december 2022.",
+      "Hvis du ikke har modtaget dit <a href='#0'>årsbrev</a> inden for de nævnte datoer, kan du kontakte Skattestyrelsen på telefon 72 22 18 18."
+    ]
+  },
+  {
+    "id": "faq-4",
+    "question": "Hvordan læser jeg mit årsbrev?",
+    "answer": [
+      "Du kan åbne denne læsevejledning, hvis du vil se, hvad beløbene i dit årsbrev betyder."
+    ],
+    "linkBlock": {
+      "label": "Læsevejledning - årsbrevet 2022",
+      "url": "https://www.skat.dk/SKAT.aspx?oId=2236077&vId=0"
+    }
+  }
+]

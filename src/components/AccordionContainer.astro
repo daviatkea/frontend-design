@@ -1,0 +1,56 @@
+---
+import AccordionItem from "../components/AccordionItem.astro";
+
+const { data, exclusive } = Astro.props;
+---
+
+<section class="accordion-container" data-exclusive={exclusive}>
+  <ul>
+    {data.map((props) => <AccordionItem {...props} />)}
+  </ul>
+</section>
+
+<style>
+  section {
+    padding-block: 3rem;
+    background: #f5f5f5;
+  }
+
+  ul {
+    list-style: none;
+    padding: 1rlh;
+    max-width: 725px;
+    margin-inline: auto;
+  }
+</style>
+
+<script>
+  // @ts-nocheck
+  const accordionWrappers = document.querySelectorAll(".accordion-container");
+
+  accordionWrappers.forEach((accordionWrapper) => {
+    accordionWrapper.addEventListener("click", (event) => {
+      const button = event.target;
+      const article = button.closest("article");
+      const exclusive = accordionWrapper.dataset.exclusive;
+
+      if (!article || button.tagName.toLowerCase() !== "button") {
+        return;
+      }
+
+      const expanded = button.getAttribute("aria-expanded") === "true" || false;
+
+      if (exclusive === "true") {
+        const currentExpanded = accordionWrapper.querySelector(
+          '[aria-expanded="true"]'
+        );
+
+        if (currentExpanded && currentExpanded !== button) {
+          currentExpanded.setAttribute("aria-expanded", "false");
+        }
+      }
+
+      button.setAttribute("aria-expanded", !expanded);
+    });
+  });
+</script>

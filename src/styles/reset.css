@@ -1,0 +1,197 @@
+@layer reset {
+
+    *,
+    ::before,
+    ::after {
+        box-sizing: border-box;
+    }
+
+    html {
+        height: 100%;
+        font-family: system-ui, sans-serif;
+        font-feature-settings: "pnum";
+        font-variant-numeric: tabular-nums;
+        -moz-text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        text-size-adjust: none;
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+        min-height: 100%;
+    }
+
+    ol[role="list"],
+    ul[role="list"] {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    figure,
+    blockquote,
+    dl,
+    dd {
+        margin: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    button,
+    input,
+    label {
+        line-height: 1.1;
+    }
+
+    b,
+    strong {
+        font-weight: bolder;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-wrap: balance;
+        font-size: inherit;
+        font-weight: inherit;
+        margin: 0;
+    }
+
+    p {
+        text-wrap: pretty;
+    }
+
+    a:not([class]):any-link {
+        color: #0043ff;
+        color: oklch(0.51 0.29 261.81);
+        text-decoration: underline oklch(0.51 0.29 261.81 / .75) 1.5px;
+        text-underline-offset: 3px;
+        transition: .15s;
+
+        &:is(:hover, :focus-visible) {
+            text-underline-offset: 1px;
+        }
+    }
+
+    img,
+    picture,
+    video {
+        inline-size: 100%;
+        height: auto;
+        display: block;
+    }
+
+    svg iframe {
+        vertical-align: bottom;
+    }
+
+    table {
+        border-collapse: collapse;
+        table-layout: fixed;
+        inline-size: 100%;
+    }
+
+    fieldset {
+        margin: 0;
+        padding: 0;
+        min-width: 0;
+    }
+
+    legend {
+        padding: 0;
+    }
+
+    input,
+    button,
+    textarea,
+    select {
+        font: inherit;
+        border-radius: 0;
+        color: inherit;
+        background: transparent;
+    }
+
+    input,
+    button,
+    textarea {
+        font-size: max(1em, 16px);
+    }
+
+    button * {
+        pointer-events: none;
+    }
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+        cursor: pointer;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    textarea:not([rows]) {
+        min-height: 10em;
+    }
+
+    :focus {
+        outline: 2px solid currentColor;
+        outline-offset: 2px;
+    }
+
+    :focus:not(:focus-visible) {
+        outline: none;
+    }
+
+    :focus-visible {
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+        box-shadow: 0 0 0 2px #000, 0 0 0 4px #fff;
+    }
+
+    :target {
+        scroll-margin-block: 2rlh;
+    }
+
+
+
+    [hidden] {
+        display: none !important;
+    }
+
+    .visually-hidden {
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+        *,
+        *:before,
+        *:after {
+            transition-duration: .01s;
+            animation: .01s;
+            scroll-behavior: auto;
+        }
+    }
+}

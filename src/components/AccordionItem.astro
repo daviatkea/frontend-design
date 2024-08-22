@@ -1,0 +1,88 @@
+---
+const { ...props } = Astro.props;
+const { id, question, answer, linkBlock } = props;
+---
+
+<li>
+  <article>
+    <h3>
+      <button aria-expanded="false" aria-controls={id}>
+        <span>{question}</span>
+        <svg
+          viewBox="0 0 10 10"
+          aria-hidden="true"
+          stroke="#181818"
+          stroke-linecap="round"
+        >
+          <line class="vert" x1="5" y1="1" x2="5" y2="9"></line>
+          <line x1="1" y1="5" x2="9" y2="5"></line>
+        </svg>
+      </button>
+    </h3>
+    <div class="answer" id={id}>
+      {answer.map((a) => <p set:html={a} />)}
+      {
+        linkBlock && (
+          <a class="link-block" href={linkBlock.url} target="_blank">
+            {linkBlock.label}
+          </a>
+        )
+      }
+    </div>
+  </article>
+</li>
+
+<style>
+  article {
+    --easing: var(--spring-easing);
+    color: hsl(190 30% 12%);
+    transition: grid 0.4s cubic-bezier(0.22, 0.03, 0.26, 1);
+    border-bottom: 1px solid #dadada;
+
+    h3 {
+      font-weight: 700;
+      color: #181818;
+      text-wrap: revert;
+    }
+
+    button {
+      border: none;
+      text-align: start;
+      padding: 0;
+      inline-size: 100%;
+      padding-block: 1rlh;
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+
+      svg {
+        inline-size: auto;
+        height: 1lh;
+        flex-shrink: 0;
+
+        .vert {
+          transform-box: fill-box;
+          transform-origin: 50% 50%;
+          rotate: z var(--vert, 0deg);
+          transition: 0.6s var(--easing);
+        }
+      }
+    }
+
+    .answer {
+      color: #595566;
+
+      > * + * {
+        margin-top: 1em;
+      }
+
+      :last-child {
+        padding-block-end: 1rlh;
+      }
+
+      .link-block {
+        display: block;
+      }
+    }
+  }
+</style>
