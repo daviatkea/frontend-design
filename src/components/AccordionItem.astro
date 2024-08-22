@@ -14,7 +14,7 @@ const { id, question, answer, linkBlock } = props;
           stroke="#181818"
           stroke-linecap="round"
         >
-          <line class="vert" x1="5" y1="1" x2="5" y2="9"></line>
+          <line class="vertical-line" x1="5" y1="1" x2="5" y2="9"></line>
           <line x1="1" y1="5" x2="9" y2="5"></line>
         </svg>
       </button>
@@ -34,9 +34,7 @@ const { id, question, answer, linkBlock } = props;
 
 <style>
   article {
-    --easing: var(--spring-easing);
     color: hsl(190 30% 12%);
-    transition: grid 0.4s cubic-bezier(0.22, 0.03, 0.26, 1);
     border-bottom: 1px solid #dadada;
 
     h3 {
@@ -60,11 +58,11 @@ const { id, question, answer, linkBlock } = props;
         height: 1lh;
         flex-shrink: 0;
 
-        .vert {
+        .vertical-line {
           transform-box: fill-box;
           transform-origin: 50% 50%;
-          rotate: z var(--vert, 0deg);
-          transition: 0.6s var(--easing);
+          rotate: z 0deg;
+          transition: 0.6s;
         }
       }
     }
