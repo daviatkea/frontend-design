@@ -4,13 +4,25 @@
     box-sizing: border-box;
   }
 
- 
+.container-grid {
+    display:grid;
+    grid-template-columns: 1fr 300px;
+}
+
+.container-wrapper {
+    container-type: inline-size;
+}
   
   article {
     margin: 20px;
     border: solid 0.5px;
     padding: 2rem;
-    container-type: inline-size;
+    @container(width<500px) {
+        p{
+            display: none;
+        }
+    }
+
   
     .product {
       gap: 2rem;
@@ -27,8 +39,9 @@
           height: auto;
           object-fit: cover;
         }
-      }
+    }
   
+    
       .product-details {
         line-height: 1.5;
         display: flex;
@@ -76,7 +89,3 @@
     }
   }
 
-
-
-
-  
