@@ -1,0 +1,42 @@
+{
+  "title": "Financial Projections",
+  "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "values": [
+    {
+      "icon": "balance-sheet",
+      "title": "The Balance Sheet",
+      "description": "The Balance Sheet is a summary of the assets and liabilities and equity of a business at a specific point of time.",
+      "link": {
+        "text": "Read More",
+        "url": "#"
+      }
+    },
+    {
+      "icon": "income-statement",
+      "title": "Income Statement",
+      "description": "The Income (Profit and Loss) Statement, commonly referred to as the P&L statement, summarizes the revenue and expenses for a specific time period (one month, one quarter, one year, etc.).",
+      "link": {
+        "text": "Read More",
+        "url": "#"
+      }
+    },
+    {
+      "icon": "financial-plan",
+      "title": "Financial Plan",
+      "description": "Keep your information current and review the documents on a regular basis (monthly or more often if needed). Review them with key individuals within your company.",
+      "link": {
+        "text": "Read More",
+        "url": "#"
+      }
+    },
+    {
+      "icon": "financial-ratios",
+      "title": "Financial Ratios",
+      "description": "Ratios are useful when comparing your company with the competition on financial performance and also when benchmarking the performance of your company.",
+      "link": {
+        "text": "Read More",
+        "url": "#"
+      }
+    }
+  ]
+}
