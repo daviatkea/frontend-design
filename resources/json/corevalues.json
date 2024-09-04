@@ -1,0 +1,46 @@
+{
+  "title": "Our core values & principles",
+  "subtitle": "Capitalize on low hanging fruit to identify a ballpark value added activity beta test. Override the digital divide with additional from DevOps.",
+  "button": {
+    "text": "Get in touch",
+    "link": "#"
+  },
+  "values": [
+    {
+      "icon": "stack",
+      "title": "Creative Ideas",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget accumsan augue Donec aliquam.",
+      "link": {
+        "text": "Read More",
+        "url": "#"
+      }
+    },
+    {
+      "icon": "bar-chart",
+      "title": "Best Features",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "link": {
+        "text": "Read More",
+        "url": "#"
+      }
+    },
+    {
+      "icon": "experience",
+      "title": "Experience",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget accumsan augue Donec aliquam.",
+      "link": {
+        "text": "Read More",
+        "url": "#"
+      }
+    },
+    {
+      "icon": "gear",
+      "title": "Easy Solutions",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "link": {
+        "text": "Read More",
+        "url": "#"
+      }
+    }
+  ]
+}
