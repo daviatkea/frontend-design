@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Jasmine",
+    "title": "CEO at Company",
+    "description": "Leverage agile frameworks to provide a robust synopsis for high level overviews.",
+    "social_links": {
+      "instagram": "#",
+      "facebook": "#",
+      "twitter": "#"
+    },
+    "slug": "sarah-jasmine",
+    "img": "/src/assets/images/sarah.jpg"
+  },
+  {
+    "id": 2,
+    "name": "John Carter",
+    "title": "Manager",
+    "description": "Leverage agile frameworks to provide a robust synopsis for high level overviews.",
+    "social_links": {
+      "instagram": "#",
+      "facebook": "#",
+      "twitter": "#"
+    },
+    "slug": "john-carter",
+    "img": "/src/assets/images/john.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Daisy Stella",
+    "title": "CEO at Company",
+    "description": "Leverage agile frameworks to provide a robust synopsis for high level overviews.",
+    "social_links": {
+      "instagram": "#",
+      "facebook": "#",
+      "twitter": "#"
+    },
+    "slug": "daisy-stella",
+    "img": "/src/assets/images/daisy.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Maya Elizabeth",
+    "title": "CEO at Company",
+    "description": "Leverage agile frameworks to provide a robust synopsis for high level overviews.",
+    "social_links": {
+      "instagram": "#",
+      "facebook": "#",
+      "twitter": "#"
+    },
+    "slug": "maya-elizabeth",
+    "img": "/src/assets/images/maya.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Ryan Jackson",
+    "title": "CEO at Company",
+    "description": "Leverage agile frameworks to provide a robust synopsis for high level overviews.",
+    "social_links": {
+      "instagram": "#",
+      "facebook": "#",
+      "twitter": "#"
+    },
+    "slug": "ryan-jackson",
+    "img": "/src/assets/images/ryan.png"
+  },
+  {
+    "id": 6,
+    "name": "Lilly Victoria",
+    "title": "CEO at Company",
+    "description": "Leverage agile frameworks to provide a robust synopsis for high level overviews.",
+    "social_links": {
+      "instagram": "#",
+      "facebook": "#",
+      "twitter": "#"
+    },
+    "slug": "lilly-victoria",
+    "img": "/src/assets/images/lilly.jpg"
+  }
+]
