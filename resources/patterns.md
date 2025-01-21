@@ -138,4 +138,4 @@ section:not(:has(> :not(article))) {
 }
 ```
 
-Se flere eksempler på [bram.us](https://www.bram.us/2022/11/17/style-a-parent-element-based-on-its-number-of-children-using-css-has/).
+Se flere eksempler på [css-tip](https://css-tip.com/quantity-queries/).
