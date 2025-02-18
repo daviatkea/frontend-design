@@ -9,16 +9,16 @@
     {
       "icon": "stack",
       "title": "Creative Ideas",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget accumsan augue Donec aliquam.",
+      "description": "Explore innovative strategies tailored to your goals. Unlock unique solutions that inspire growth and creativity. Drive impactful change.",
       "link": {
         "text": "Read More",
         "url": "#"
       }
     },
     {
-      "icon": "bar-chart",
+      "icon": "chart",
       "title": "Best Features",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "description": "Deliver advanced tools designed for seamless integration. Optimize workflows with cutting-edge technology.",
       "link": {
         "text": "Read More",
         "url": "#"
@@ -27,7 +27,7 @@
     {
       "icon": "experience",
       "title": "Experience",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget accumsan augue Donec aliquam.",
+      "description": "Leverage years of proven expertise across diverse industries. Empower your business with our skilled professionals. Achieve sustainable success.",
       "link": {
         "text": "Read More",
         "url": "#"
@@ -36,7 +36,7 @@
     {
       "icon": "gear",
       "title": "Easy Solutions",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "description": "Streamline your challenges with simple, effective solutions. Ensure hassle-free implementation for measurable results.",
       "link": {
         "text": "Read More",
         "url": "#"

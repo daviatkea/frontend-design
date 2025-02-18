@@ -3,7 +3,9 @@
     "id": 1,
     "name": "Sarah Jasmine",
     "title": "CEO at Company",
-    "description": "Leverage agile frameworks to provide a robust synopsis for high level overviews.",
+    "description": "Driving innovation and leadership with a focus on strategic growth and impactful decisions.",
+    "description_long": "Sarah Jasmine is a dynamic CEO known for her innovative leadership style and commitment to excellence. With a background in technology and business, she has transformed her company into a market leader. Sarah is passionate about fostering a collaborative work environment and empowering her team to achieve their best. Her vision and strategic thinking have driven significant growth and success, making her a respected figure in the industry.",
+    "past_experience": "Sarah Jasmine has a rich background in project management, having successfully led multiple teams through complex initiatives. Her expertise lies in coordinating efforts across departments to ensure timely delivery and high-quality outcomes. Over the years, she has honed her skills in strategic planning and stakeholder engagement, making her a valuable asset in any organization. Sarah's dedication to fostering collaboration and her ability to adapt to changing circumstances have consistently driven her teams to exceed expectations. With a focus on continuous improvement, she embraces challenges as opportunities for growth.",
     "social_links": {
       "instagram": "#",
       "facebook": "#",
@@ -16,7 +18,9 @@
     "id": 2,
     "name": "John Carter",
     "title": "Manager",
-    "description": "Leverage agile frameworks to provide a robust synopsis for high level overviews.",
+    "description": "Expert in operational efficiency, ensuring smooth processes and exceptional team performance.",
+    "description_long": "John Carter is a seasoned manager with a proven track record of success. He is known for his expertise in operational efficiency and his ability to drive exceptional team performance. John is dedicated to ensuring smooth processes and delivering results that exceed expectations. His leadership style is characterized by a focus on collaboration, communication, and continuous improvement. John's commitment to excellence has earned him a reputation as a trusted and respected leader.",
+    "past_experience": "John Carter has a wealth of experience in managing teams and projects across various industries. His background in operations management has equipped him with the skills to streamline processes, optimize resources, and drive efficiency. John's ability to motivate and inspire his team members has led to high levels of engagement and productivity. He is known for his strategic thinking, problem-solving skills, and commitment to delivering results. John's dedication to excellence and passion for driving success have made him a valuable asset to any organization.",
     "social_links": {
       "instagram": "#",
       "facebook": "#",
@@ -28,8 +32,10 @@
   {
     "id": 3,
     "name": "Daisy Stella",
-    "title": "CEO at Company",
-    "description": "Leverage agile frameworks to provide a robust synopsis for high level overviews.",
+    "title": "Visionary",
+    "description": "Driving innovation and leadership with a focus on strategic growth and impactful decisions.",
+    "description_long": "Daisy Stella is a visionary leader with a passion for driving innovation and growth. She is known for her strategic thinking and ability to make impactful decisions that drive results. Daisy's leadership style is characterized by her focus on collaboration, creativity, and continuous improvement. She is dedicated to empowering her team to achieve their best and driving meaningful change within the organization. Daisy's vision and commitment to excellence have made her a respected figure in the industry.",
+    "past_experience": "Daisy Stella has a diverse background in marketing, business development, and strategic planning. Her experience in leading cross-functional teams and driving successful initiatives has equipped her with the skills to navigate complex challenges and deliver results. Daisy's ability to think creatively and strategically has enabled her to identify new opportunities for growth and innovation. She is known for her dedication to excellence and her passion for driving success. Daisy's commitment to fostering collaboration and empowering her team members has made her a trusted leader and advisor.",
     "social_links": {
       "instagram": "#",
       "facebook": "#",
@@ -41,8 +47,10 @@
   {
     "id": 4,
     "name": "Maya Elizabeth",
-    "title": "CEO at Company",
-    "description": "Leverage agile frameworks to provide a robust synopsis for high level overviews.",
+    "title": "Strategist",
+    "description": "Crafting tailored strategies to empower business success and maximize market potential.",
+    "description_long": "Maya Elizabeth is a strategic thinker with a talent for crafting tailored strategies that empower business success. She is known for her ability to analyze market trends and develop innovative solutions that drive growth. Maya's expertise in strategic planning and execution has helped her clients achieve their goals and maximize their market potential. Her dedication to excellence and commitment to delivering results have made her a trusted advisor and partner to businesses of all sizes.",
+    "past_experience": "Maya Elizabeth has a background in marketing, business development, and strategic planning. Her experience in developing and implementing successful marketing campaigns and growth strategies has equipped her with the skills to drive business success. Maya's ability to identify market opportunities and craft tailored solutions has led to significant growth and success for her clients. She is known for her strategic thinking, creativity, and commitment to excellence. Maya's passion for driving success and her dedication to empowering businesses have made her a respected figure in the industry.",
     "social_links": {
       "instagram": "#",
       "facebook": "#",
@@ -54,8 +62,10 @@
   {
     "id": 5,
     "name": "Ryan Jackson",
-    "title": "CEO at Company",
-    "description": "Leverage agile frameworks to provide a robust synopsis for high level overviews.",
+    "title": "Director",
+    "description": "Leading with vision and precision to align organizational goals with long-term growth.",
+    "description_long": "Ryan Jackson is a dynamic director known for his strategic vision and precision in aligning organizational goals with long-term growth. He is dedicated to driving innovation and excellence within his team and fostering a culture of collaboration and continuous improvement. Ryan's leadership style is characterized by his focus on results, accountability, and empowerment. His commitment to excellence and passion for driving success have made him a respected leader in his field.",
+    "past_experience": "Ryan Jackson has a background in project management, business development, and strategic planning. His experience in leading cross-functional teams and driving successful initiatives has equipped him with the skills to navigate complex challenges and deliver results. Ryan's ability to think strategically and execute with precision has enabled him to achieve significant growth and success for his organization. He is known for his dedication to excellence, his passion for driving success, and his ability to inspire and motivate his team members. Ryan's commitment to fostering collaboration and empowering his team has made him a trusted leader and advisor.",
     "social_links": {
       "instagram": "#",
       "facebook": "#",
@@ -67,8 +77,10 @@
   {
     "id": 6,
     "name": "Lilly Victoria",
-    "title": "CEO at Company",
-    "description": "Leverage agile frameworks to provide a robust synopsis for high level overviews.",
+    "title": "President",
+    "description": "Championing collaboration and excellence to drive meaningful change and success.",
+    "description_long": "Lilly Victoria is a visionary president known for championing collaboration and excellence to drive meaningful change and success. She is dedicated to fostering a culture of innovation and empowerment within her organization and empowering her team to achieve their best. Lilly's leadership style is characterized by her focus on strategic thinking, creativity, and continuous improvement. Her commitment to excellence and passion for driving success have made her a respected figure in the industry.",
+    "past_experience": "Lilly Victoria has a diverse background in marketing, business development, and strategic planning. Her experience in leading cross-functional teams and driving successful initiatives has equipped her with the skills to navigate complex challenges and deliver results. Lilly's ability to think creatively and strategically has enabled her to identify new opportunities for growth and innovation. She is known for her dedication to excellence and her passion for driving success. Lilly's commitment to fostering collaboration and empowering her team members has made her a trusted leader and advisor.",
     "social_links": {
       "instagram": "#",
       "facebook": "#",
