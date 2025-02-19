@@ -1,40 +1,36 @@
-# **Animated Accordion Challenge**
+# **Animated Accordion med Details/Summary**
 
 ![Animated Accordion](readmeassets/accordion.gif)
 
 ## Formål
 
-Formålet med denne øvelse/udfordring er at se, hvordan du vil gribe et effekt an, uden nødvendigvis at vide, hvordan du skal opnå det visuelle resultat. Dette vil hjælpe dig med at udfordre dig selv og din viden om CSS.
+Formålet med denne øvelse er at undersøge, hvordan du vil implementere en effekt ved at konsultere eksterne ressourcer. Øvelsen vil hjælpe dig med at udfordre både din forståelse af CSS og din evne til at anvende teknikker fra forskellige kilder.
 
 ## Ressourcer
 
-Brug følgende ressourcer til at hjælpe dig med at løse denne udfordring:
+Brug følgende ressourcer til at hjælpe dig med at løse denne opgave:
 
-- [How to animate height with css grid](https://www.stefanjudis.com/snippets/how-to-animate-height-with-css-grid/)
-- [The simple trick to transition from height 0 to auto with CSS](https://www.youtube.com/watch?v=B_n4YONte5A)
+- [Styling details](https://developer.chrome.com/blog/styling-details)
+- [Open and close transitions for the details element](https://nerdy.dev/open-and-close-transitions-for-the-details-element)
+- [MDN: ::details-content](https://developer.mozilla.org/en-US/docs/Web/CSS/::details-content)
 
 ## Opgavebeskrivelse
 
-Du skal arbejde med denne branch, som er sat op med Astro. Indholdet er allerede loadet ind på `index.astro`, så du skal primært fokusere på at inkorporere effekten i `AccordionItem.astro`.
+Du skal arbejde med denne branch, som er sat op med Astro. Indholdet er allerede indlæst ind på `index.astro`, så dit fokus er primært at inkorporere effekten i `AccordionItem.astro`.
 
-Du kan bruge følgende selector til at style elementer i deres åbne tilstand:
+Din løsning skal tage hensyn til brugerens systempræferencer, såsom reduceret bevægelse (`prefers-reduced-motion`). Derudover skal løsningen forblive funktionel (dog uden animation) i browsere, der ikke understøtter effekten.
 
-`article:has([aria-expanded="true"])`
-
-Hvis vi fx skal animere SVG-ikonet, når en artikel er åben, kan vi skrive:
+Du kan bruge følgende snippet til at animere ikonet, når en artikel er åben:
 
 ```css
-article:has([aria-expanded="true"]) {
-  /*...*/
-  .vertical-line {
-    rotate: z 90deg;
-  }
+details[open] {
+  --r: z 90deg;
 }
 ```
 
 ### Specifikke mål
 
-- Udfordre dig selv til at anvende din viden om CSS samt at implementere teknikker fra eksterne ressourcer.
+- Udfordre dig selv til at anvende din viden om CSS og implementere teknikker fra eksterne ressourcer.
 
 > [!NOTE]  
 > **Bemærk, at denne branch allerede inkluderer et CSS Reset.**
