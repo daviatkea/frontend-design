@@ -23,8 +23,8 @@ For at inkludere et ikon skal du bruge et `<svg>` element sammen med et `<use>` 
 Her er et eksempel på, hvordan du kan indsætte et Mastodon-ikon:
 
 ```html
-<svg>
-  <use href="icons.svg#mastodon" width="25" height="25" />
+<svg width="25" height="25">
+  <use href="icons.svg#mastodon" />
 </svg>
 ```
 
