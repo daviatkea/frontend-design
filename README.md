@@ -46,6 +46,7 @@
 ### UI Patterns
 
 - Card UI ("card-ui")
+- Animated Accordion w/ details/summary ("details-accordion")
 
 ### Code in the Dark
 
@@ -54,7 +55,7 @@
 
 ### Challenges
 
-- Animated Accordion ("accordion")
+- Animated Accordion w/ grid ("accordion")
 - Card Expand ("card-expand")
 - Sticky Labels ("sticky-labels")
 
