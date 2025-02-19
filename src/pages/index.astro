@@ -7,8 +7,8 @@ import AccordionContainer from "../components/AccordionContainer.astro";
 
 <Layout title="Welcome to Astro.">
   <main>
-    <h1>Accordion</h1>
-    <AccordionContainer data={faqData} exclusive="true" />
+    <h1>Details/Summary Accordion</h1>
+    <AccordionContainer data={faqData} exclusive={true} />
   </main>
 </Layout>
 
@@ -17,7 +17,7 @@ import AccordionContainer from "../components/AccordionContainer.astro";
     margin: 3rem max(1rem, 50% - 1000px / 2);
   }
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 800;
     margin: 0 0 2rem;
     text-align: center;

@@ -1,0 +1,13 @@
+<svg viewBox="0 0 24 24" width="24" height="24">
+    <style>
+      .vertical {
+        transform-box: fill-box;
+        transform-origin: 50% 50%;
+        rotate: var(--r, 0deg);
+        transition: rotate .2s;
+      }</style>
+    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" >
+      <path class="vertical" d="M12 5v14"></path>
+      <path d="M5 12h14"></path>
+    </g>
+</svg>
