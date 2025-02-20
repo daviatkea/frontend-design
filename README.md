@@ -22,7 +22,7 @@
 
 </details>
 
-4. Vælg en øvelse ved at skifte til den relevante branch (se liste over øvelser nedenfor)
+Du er nu klar til at gå i gang med opgaverne. Når du skal lave en øvelse, så vælg denne ved at skifte til den relevante branch (se liste over øvelser nedenfor).
 
 ## Opgaveoversigt (via branches)
 
