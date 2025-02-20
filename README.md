@@ -26,11 +26,6 @@
 
 ## Opgaveoversigt (via branches)
 
-### Typografi
-
-- Flow Space-teknikken ("flow-space")
-- Styling af tekstindhold ("text-styling")
-
 ### Selectors
 
 - No Classes ("no-classes")
@@ -45,6 +40,8 @@
 
 ### UI Patterns
 
+- Flow Space-teknikken ("flow-space")
+- Styling af tekstindhold ("text-styling")
 - Card UI ("card-ui")
 - Animated Accordion w/ details/summary ("details-accordion")
 
