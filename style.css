@@ -1,53 +1,75 @@
-li,
-main,
-aside {
-    /* Sæt container-type */
-}
-
-ul {
+.bento {
     display: grid;
-    gap: 1rlh;
-    padding-block: 1rlh;
+    gap: var(--spacing-base);
 
-    /* Tilføj container regel, når width > 700px */
-    /* - Indstil 2 kolonner */
-    /* - Sæt det første barn til `grid-column: span 2` */
+    .title {
+        --bg: var(--color-brand-yellow);
+    }
+
+    .list {
+        --bg: var(--color-brand-coffee);
+    }
+
+    .image-1 {
+        color: var(--color-text-accent);
+    }
+
+    .tag {
+        --bg: var(--color-brand-olive);
+        font-size: 2rem;
+        line-height: 1.2;
+    }
 }
 
-article {
-    display: grid;
-    gap: 1rlh;
-    padding: 1rlh;
-    background: #cceeff;
-    border: 1px solid #99ddff;
-    font-size: clamp(1rem, 3cqw, 1.25rem);
+.card {
+    border-radius: var(--border-radius);
+    background: var(--bg);
+    overflow: clip;
 
-    aside & {
-        background: #ffdbff;
-        border: 1px solid #cc66ff;
+    &:not(:has(img)) {
+        padding: var(--spacing-base);
     }
-
-    h3 {
-        font-size: 1.5em;
-        margin-bottom: .4lh;
-    }
-
-    p+p {
-        margin-top: .4lh;
-    }
-
-
-    /* Tilføj container regel når width > 500px */
-    /* - Indstil 2 kolonner */
-    /* - Sæt `order: 1;` på img på hvert andet card */
 }
 
-/* Læg mærke til, at vi bør stadig bruge @media, når det handler om viewporten */
-.content-wrapper {
+h2 {
+    font-size: 4rem;
+    line-height: 1.1;
+    color: var(--color-text-dark);
+    margin-bottom: var(--spacing-base);
+}
 
-    @media (width > 700px) {
-        display: grid;
-        grid-template-columns: 1fr 250px;
-        gap: 1rlh;
+.website {
+    font-size: 1.2rem;
+    margin-top: auto;
+}
+
+
+
+@layer {
+    :root {
+        /* Brand Colors */
+        --color-brand-yellow: #FFB800;
+        --color-brand-olive: #4A5F32;
+        --color-brand-coffee: #5C3C2E;
+
+        /* Background Colors */
+        --color-background-dark: #2C1810;
+        --color-background-primary: var(--color-brand-yellow);
+        --color-background-menu: var(--color-brand-coffee);
+        --color-background-accent: var(--color-brand-olive);
+
+        /* Text Colors */
+        --color-text-dark: var(--color-background-dark);
+        --color-text-light: #FFFFFF;
+        --color-text-accent: var(--color-brand-yellow);
+
+        /* Component Colors */
+        --color-logo-icon: var(--color-text-dark);
+        --color-menu-highlight: var(--color-brand-yellow);
+
+        /* Layout */
+        --border-radius: 24px;
+        --spacing-base: 20px;
+        --spacing-large: 40px;
     }
 }

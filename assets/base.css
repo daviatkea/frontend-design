@@ -9,6 +9,9 @@
     }
 
     body {
+        background: var(--color-background-dark);
+        font-family: system-ui, sans-serif;
+        padding: var(--spacing-base);
         display: grid;
         grid-template-columns: 1fr minmax(0px, 1200px) 1fr;
         gap: 1rlh;
