@@ -75,6 +75,9 @@ button:hover {
   align-items: center;
   justify-content: center;
   max-width: 500px;
+  * + * {
+    margin-left: 10px; /* Adds space between all sibling elements */
+  }
 }
 
 /* Placer billederne i rækkefølger  */
