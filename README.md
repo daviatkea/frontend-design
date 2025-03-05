@@ -32,6 +32,6 @@ Billeder skal fylde viewportens bredde.
 
 Find linket til din løsning på Netlify og aflever det på Fronter.
 
-Link-struktur: **breakout--**[Dit unikke netlify link].netlify.app/
+Link-struktur: **breakout--**[breakout--imaginative-dasik-f107cc.netlify.app/].netlify.app/
 
 ![Solution](./assets/breakout2.png)
