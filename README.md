@@ -29,7 +29,7 @@ Der er et overlay, der skjuler resultatet af dit arbejde undervejs. Når du føl
 
 Find linket til din løsning på Netlify og aflever det på Fronter.
 
-Link-struktur: **citd-1--**[Dit unikke netlify link].netlify.app/
+Link-struktur: **citd-1--**[citd-1--imaginative-dasik-f107cc.netlify.app/].netlify.app/
 
 ## Ressourcer
 
