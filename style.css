@@ -1,16 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 :root {
-    background: #E3EDFB;
+  background: #e3edfb;
+  --color-icon: #0b3a67;
+  --image-width: 8rem;
+  --card-padding: 1rem;
+  --font-heading: 1.75rem;
 
-    --color-icon: #0B3A67;
-
-    --image-width: 8rem;
-    --card-padding: 1rem;
-
-    --font-heading: 1.75rem;
-
-    /* Når du synes, du er færdig, så ændr værdien herunder til '1' for at se dit resultat i browseren */
-    --hide-overlay: 0;
+  /* Når du synes, du er færdig, så ændr værdien herunder til '1' for at se dit resultat i browseren */
+  --hide-overlay: 1;
 }
 
-
 /* Begynd her... */
+article {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #b6c0ce;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: auto;
+  margin-top: 4rem;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.profile img {
+  border-radius: 60%;
+  object-fit: cover;
+  max-width: var(--image-width);
+}
+
+h1 {
+  font-size: var(--font-heading);
+}
+
+h2 {
+  font-size: 1rem;
+  color: gray;
+}
+
+li {
+  display: flex;
+  flex-wrap: nowrap; /* Ensure icons ek hi row mein rahein */
+  gap: 10px;
+  list-style: none; /* Default bullets hatane ke liye */
+}
+
+svg {
+  fill: var(--color-icon);
+}
