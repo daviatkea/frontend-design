@@ -47,9 +47,6 @@ article {
     @container (width > 500px) {
       display: grid;
       grid-template-columns: auto auto;
-      /* li:nth-child(even) img {
-        order: 1;
-      } */
       
     }
       
@@ -61,8 +58,6 @@ article {
 }
 
 @container (width > 500px) {
-  /* display: grid;
-  grid-template-columns: auto auto; */
   li:nth-child(even) img {
     order: 1;
   }
