@@ -1,6 +1,8 @@
 .bento {
     display: grid;
     gap: var(--spacing-base);
+    grid-template-areas:
+     ;
 
     .title {
         --bg: var(--color-brand-yellow);
@@ -19,6 +21,8 @@
         font-size: 2rem;
         line-height: 1.2;
     }
+
+
 }
 
 .card {
