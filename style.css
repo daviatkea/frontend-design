@@ -1,25 +1,36 @@
 .bento {
     display: grid;
     gap: var(--spacing-base);
+    grid-auto-columns: 1fr;
+    grid-auto-rows: min-content;
     grid-template-areas:
+    "title title cup"
+    "man man cup"
+    "man list tag"
      ;
 
     .title {
         --bg: var(--color-brand-yellow);
+        grid-area: title;
     }
 
     .list {
-        --bg: var(--color-brand-coffee);
+        --bg: var(--color-brand-coffee);        
+        grid-area: list;
+
     }
 
     .image-1 {
         color: var(--color-text-accent);
+
     }
 
     .tag {
         --bg: var(--color-brand-olive);
         font-size: 2rem;
         line-height: 1.2;
+        grid-area: tag;
+
     }
 
 
