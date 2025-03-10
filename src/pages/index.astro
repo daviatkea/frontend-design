@@ -38,5 +38,21 @@ import { cardContent } from "../data/card-content.js";
     padding-block: 4rem; /* Kun af æstetiske årsager */
   }
   section {
+    padding-inline:max(
+    1rem,
+    50% - var(--content-width) / 2
+  );
+
+    >*+*{
+      /*ændr på padding-inline her*/
+
+      /* --content-width:0;
+      &::after{
+        --content-width:1;
+        padding-inline:calc(50 * var(--content-width) + 50)
+      } */
+
+    }
+
   }
 </style>
