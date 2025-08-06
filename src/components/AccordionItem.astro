@@ -27,13 +27,34 @@ const { id, question, answer, linkBlock } = props;
   details {
     color: hsl(190 30% 12%);
     border-bottom: 1px solid #dadada;
-
+    transition: all 0.5s ease;
+    @media (prefers-reduced-motion: no-preference) {
+    interpolate-size: allow-keywords;
+  }
+    &::details-content {
+      transition: all 0.5s ease, content-visibility 0.5s allow-discrete;
+      height: 0;
+      overflow: clip;
+  }
+  &[open]::details-content {
+    height: auto;
+  }
+  
+@supports (interpolate-size: allow-keywords) {
+    :root {
+        interpolate-size: allow-keywords;
+    }
+    [open]::details-content {
+        height: auto;
+    }
+}
     summary {
       font-weight: 700;
       color: #181818;
       text-wrap: revert;
       user-select: none;
       cursor: pointer;
+      transition:all 0.5s ease;
 
       &::marker,
       &::-webkit-details-marker {
@@ -55,10 +76,13 @@ const { id, question, answer, linkBlock } = props;
           inline-size: auto;
           height: 1lh;
           flex-shrink: 0;
+
+          &::after{
+            background-color:red;
+          }
         }
       }
     }
-
     .answer {
       color: #595566;
 
