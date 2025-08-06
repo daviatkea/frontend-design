@@ -4,7 +4,7 @@ const { exclusive, ...props } = Astro.props;
 const { id, question, answer, linkBlock } = props;
 ---
 
-<details {id}>
+<details {id} {...exclusive ? { name: "faq" } : {}}>
   <summary>
     <span>
       {question}

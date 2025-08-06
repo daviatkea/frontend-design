@@ -2,9 +2,9 @@ import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-  experimental: {
-    svg: {
-      mode: "sprite",
-    },
+  image: {
+    responsiveStyles: true,
+    layout: "constrained",
   },
+  experimental: {},
 });
