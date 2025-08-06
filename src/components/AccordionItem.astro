@@ -27,52 +27,73 @@ const { id, question, answer, linkBlock } = props;
   details {
     color: hsl(190 30% 12%);
     border-bottom: 1px solid #dadada;
+    --r: 0deg; /* Standard rotation */
+  }
 
-    summary {
-      font-weight: 700;
-      color: #181818;
-      text-wrap: revert;
-      user-select: none;
-      cursor: pointer;
+  details[open] {
+    --r: 90deg; /* Når details er åbnet */
+  }
 
-      &::marker,
-      &::-webkit-details-marker {
-        content: "";
-        display: none;
-      }
+  summary {
+    font-weight: 700;
+    color: #181818;
+    text-wrap: revert;
+    user-select: none;
+    cursor: pointer;
 
-      span {
-        border: none;
-        text-align: start;
-        padding: 0;
-        inline-size: 100%;
-        padding-block: 1rlh;
-        display: flex;
-        gap: 1rem;
-        justify-content: space-between;
-
-        svg {
-          inline-size: auto;
-          height: 1lh;
-          flex-shrink: 0;
-        }
-      }
+    &::marker,
+    &::-webkit-details-marker {
+      content: "";
+      display: none;
     }
 
-    .answer {
-      color: #595566;
+    span {
+      border: none;
+      text-align: start;
+      padding: 0;
+      inline-size: 100%;
+      padding-block: 1rlh;
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
 
-      > * + * {
-        margin-top: 1em;
-      }
-
-      :last-child {
-        padding-block-end: 1rlh;
-      }
-
-      .link-block {
-        display: block;
+      svg {
+        inline-size: auto;
+        height: 1lh;
+        flex-shrink: 0;
       }
     }
+  }
+
+  .answer {
+    color: #595566;
+
+    > * + * {
+      margin-top: 1em;
+    }
+
+    :last-child {
+      padding-block-end: 1rlh;
+    }
+
+    .link-block {
+      display: block;
+    }
+  }
+
+  /* Glidende åbning af .answer */
+  .answer {
+    max-height: 0; /* Starter skjult */
+    opacity: 0;
+    overflow: hidden;
+    transition:
+      content-visibility 1s allow-discrete,
+      opacity 1s,
+      block-size 1s;
+  }
+
+  details[open] .answer {
+    max-height: 500px; /* Sæt en passende værdi */
+    opacity: 1;
   }
 </style>
