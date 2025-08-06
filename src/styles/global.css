@@ -2,35 +2,34 @@
 
 @import "./reset.css" layer(reset);
 
-
 @layer exercise {
-    :root {
-        --content-width: 50rem;
-        --card-padding: 2.75rem 2.1875rem;
-        --card-gap: 1rem;
-        --card-border-radius: 8px;
-        --card-background: #EBEBEB;
-        --card-text-color: #595566;
-    }
+  :root {
+    --content-width: 50rem;
+    --card-padding: 2.75rem 2.1875rem;
+    --card-gap: 1rem;
+    --card-border-radius: 8px;
+    --card-background: #ebebeb;
+    --card-text-color: #595566;
+  }
 
-    body {
-        min-height: 100svh;
-        font-family: system-ui, sans-serif;
-    }
+  body {
+    min-height: 100svh;
+    font-family: system-ui, sans-serif;
+  }
 
-    h2,
-    h3 {
-        color: #181818;
-        margin-block: 0 0.625rem;
-        line-height: 1.125;
-    }
+  h2,
+  h3 {
+    color: #181818;
+    margin-block: 0 0.625rem;
+    line-height: 1.125;
+  }
 
-    h2 {
-        font-size: 2.8125rem;
-    }
+  h2 {
+    font-size: 2.8125rem;
+  }
 
-    h3 {
-        font-weight: 700;
-        font-size: 1.5625rem;
-    }
+  h3 {
+    font-weight: 700;
+    font-size: 1.5625rem;
+  }
 }
