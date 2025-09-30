@@ -9,8 +9,45 @@
     --font-heading: 1.75rem;
 
     /* Når du synes, du er færdig, så ændr værdien herunder til '1' for at se dit resultat i browseren */
-    --hide-overlay: 0;
+    --hide-overlay: 1;
 }
 
 
 /* Begynd her... */
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: var(--card-padding);
+    background-color:  #E3EDFB;
+    gap: 0;
+}
+
+img{
+    width: var(--image-width);
+    border-radius: 800px;
+    margin-left: 20rem; /* Tilføjet efter jeg fjernede overlay */
+}
+
+.højre h1{
+    font-size: var(--font-heading);
+    font-weight: 600;
+}
+
+p {
+    color: cadetblue;
+    font-weight: 600;
+}
+
+.icons{
+    display: flex;
+    width: 10vw;
+
+    svg{
+         color: var(--color-icon);
+    }
+
+
+}
+
+
