@@ -1,185 +1,206 @@
 html {
-    color-scheme: light;
+  color-scheme: light;
 
-    &[data-theme="dark"] {
-        color-scheme: dark;
-    }
+  &[data-theme="dark"] {
+    color-scheme: dark;
+  }
 
-    background: light-dark(#FEFEFE, #000);
+  background: light-dark(#fefefe, #000);
 
-    --body: light-dark(#555, #aaa);
-    --zebra-stripes: light-dark(#F8F8F8, #0B0B0B);
-    --action-primary: light-dark(#000, #515151);
-    --on-action-primary: #fff;
-    --action-secondary: light-dark(#E4E4E4, #181818);
-    --on-action-secondary: light-dark(#000, #fff);
+  --body: light-dark(#555, #aaa);
+  --zebra-stripes: light-dark(#f8f8f8, #0b0b0b);
+  --action-primary: light-dark(#000, #515151);
+  --on-action-primary: #fff;
+  --action-secondary: light-dark(#e4e4e4, #181818);
+  --on-action-secondary: light-dark(#000, #fff);
 }
 
 article {
-    padding: 1rlh;
-    max-inline-size: 1200px;
-    margin-inline: auto;
+  container: article / inline-size;
+  padding: 1rlh;
+  max-inline-size: 1200px;
+  margin-inline: auto;
 
-    display: grid;
-    gap: 1.5rlh;
+  display: grid;
+  gap: 1.5rlh;
 
-    @media (width > 768px) {
-        grid-template-columns: 300px 1fr;
+  @media (width > 768px) {
+    grid-template-columns: 300px 1fr;
+  }
+
+  @container article (width > 768px) {
+    grid-template-columns: 300px 1fr;
+    /* fx grid-template-columns: 300px 1fr */
+  }
+
+  p {
+    font-size: 0.9rem;
+    color: var(--body);
+  }
+
+  @container article (width < 550px) {
+    img {
+      mask: linear-gradient(to bottom, black 50%, transparent 100%);
     }
 
-    p {
-        font-size: .9rem;
-        color: var(--body);
+    li {
+      flex: 1;
     }
+
+    .content {
+      margin-top: -5rem;
+      /* margin-inline: -1rlh;
+      padding-inline: 1rlh; */
+    }
+    .album-details {
+      justify-content: center;
+      text-align: center;
+      gap: 0.5rlh;
+    }
+    /* fx centrér album-detaljer, fuldbredde knapper, negativ margin på .content */
+  }
 }
 
 header {
+  container: header / inline-size;
 
-    img {
-        aspect-ratio: 1;
-        object-fit: cover;
-        border-radius: 1rem;
+  img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+
+  > div {
+    display: grid;
+    gap: 1rlh;
+    align-items: start;
+  }
+
+  @container header (width >= 550px) {
+    > div {
+      grid-template-columns: 250px 1fr;
+      align-items: start;
     }
-
-    >div {
-        display: grid;
-        gap: 1rlh;
-        align-items: start;
-
-    }
+    /* fx grid med 250px cover + tekst ved siden af */
+  }
 }
 
 .content {
-    display: grid;
-    gap: .75rlh;
+  display: grid;
+  gap: 0.75rlh;
 }
 
-
 .album-details {
-    display: flex;
-    flex-flow: wrap;
-    font-size: .9rem;
-    row-gap: .2rlh;
+  display: flex;
+  flex-flow: wrap;
+  font-size: 0.9rem;
+  row-gap: 0.2rlh;
 
+  h1 {
+    flex-basis: 100%;
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
 
-    h1 {
-        flex-basis: 100%;
-        font-size: 1.4rem;
-        font-weight: 700;
-    }
+  > span:has(+ span)::after {
+    content: "•";
+    margin-inline: 0.2rlh;
+  }
 
-    >span:has(+ span)::after {
-        content: "•";
-        margin-inline: .2rlh;
-    }
-
-    .band {
-        font-weight: 600;
-    }
+  .band {
+    font-weight: 600;
+  }
 }
 
 .actions {
-    display: flex;
-    gap: 1ch;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  gap: 1ch;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 
-    button[data-button] {
-        border-radius: 1e5px;
-        border: 0;
-        background: var(--action-primary);
-        color: var(--on-action-primary);
-        padding: .2rlh 1rlh;
-        cursor: pointer;
-        font-weight: 500;
-        inline-size: 100%;
+  button[data-button] {
+    border-radius: 1e5px;
+    border: 0;
+    background: var(--action-primary);
+    color: var(--on-action-primary);
+    padding: 0.2rlh 1rlh;
+    cursor: pointer;
+    font-weight: 500;
+    inline-size: 100%;
 
-        &[data-button="secondary"] {
-            background: var(--action-secondary);
-            color: var(--on-action-secondary);
-        }
+    &[data-button="secondary"] {
+      background: var(--action-secondary);
+      color: var(--on-action-secondary);
     }
+  }
 }
 
 .songs {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    counter-reset: list-item;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: list-item;
 
-    li {
-        padding: .25rlh 1rlh;
-        display: flex;
-        align-items: center;
-        gap: 2ch;
-        counter-increment: list-item;
+  li {
+    padding: 0.25rlh 1rlh;
+    display: flex;
+    align-items: center;
+    gap: 2ch;
+    counter-increment: list-item;
 
-        &:nth-child(odd) {
-            background: var(--zebra-stripes);
-        }
-
-        &::before {
-            content: counter(list-item);
-        }
-
-        div {
-            display: grid;
-            font-size: .9rem;
-        }
-
-        .duration {
-            margin-inline-start: auto;
-        }
+    &:nth-child(odd) {
+      background: var(--zebra-stripes);
     }
+
+    &::before {
+      content: counter(list-item);
+    }
+
+    div {
+      display: grid;
+      font-size: 0.9rem;
+    }
+
+    .duration {
+      margin-inline-start: auto;
+    }
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 @layer {
-    * {
-        corner-shape: squircle;
-    }
+  * {
+    corner-shape: squircle;
+  }
 
-    body {
-        min-height: 100svh;
-        font-family: system-ui, sans-serif;
-    }
+  body {
+    min-height: 100svh;
+    font-family: system-ui, sans-serif;
+  }
 }
 
-
 button[data-theme-switcher] {
-    position: fixed;
-    inset: auto 1cap 1cap;
-    width: fit-content;
-    justify-self: center;
-    margin-inline: auto;
-    border: none;
-    text-box: cap alphabetic;
-    background: var(--action-primary);
-    color: var(--on-action-primary);
-    padding: 1cap;
-    border-radius: 1e5px;
-    cursor: pointer;
+  position: fixed;
+  inset: auto 1cap 1cap;
+  width: fit-content;
+  justify-self: center;
+  margin-inline: auto;
+  border: none;
+  text-box: cap alphabetic;
+  background: var(--action-primary);
+  color: var(--on-action-primary);
+  padding: 1cap;
+  border-radius: 1e5px;
+  cursor: pointer;
 
-    &:hover {
-        background: var(--action-secondary);
-        color: var(--on-action-secondary);
-        outline: 1px solid var(--action-primary);
-        outline-offset: 0px;
-    }
+  &:hover {
+    background: var(--action-secondary);
+    color: var(--on-action-secondary);
+    outline: 1px solid var(--action-primary);
+    outline-offset: 0px;
+  }
 
-    &:active {
-        scale: .98;
-    }
+  &:active {
+    scale: 0.98;
+  }
 }
