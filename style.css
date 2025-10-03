@@ -43,6 +43,10 @@ article {
       mask: linear-gradient(to bottom, black 50%, transparent 100%);
     }
 
+    li {
+      flex: 1;
+    }
+
     .content {
       margin-top: -5rem;
       /* margin-inline: -1rlh;
@@ -114,10 +118,6 @@ header {
   list-style: none;
   padding: 0;
   margin: 0;
-
-  li {
-    flex: 1;
-  }
 
   button[data-button] {
     border-radius: 1e5px;
