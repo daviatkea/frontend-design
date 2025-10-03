@@ -40,12 +40,13 @@ article {
 
   @container article (width < 550px) {
     img {
-      mask: linear-gradient(to bottom, black 70%, transparent 100%);
+      mask: linear-gradient(to bottom, black 50%, transparent 100%);
     }
 
     .content {
-      margin-inline: -1rlh;
-      padding-inline: 1rlh;
+      margin-top: -5rem;
+      /* margin-inline: -1rlh;
+      padding-inline: 1rlh; */
     }
     .album-details {
       justify-content: center;
