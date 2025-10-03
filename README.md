@@ -57,13 +57,20 @@ Du får udleveret markup og lidt CSS. Din opgave er at **implementere** containe
 
    ```css
    @container header (width >= 550px) {
-     /* fx grid med 250px cover + tekst ved siden af */
+     /* fx grid med `250px 1fr` cover + tekst ved siden af */
    }
    ```
 
-3. **Article-breakpoint (store visninger):**
+3. **Document-breakpoint (store visninger):**
+
    ```css
-   @container article (width > 768px) {
+   html {
+     container: document / inline-size;
+   }
+   ```
+
+   ```css
+   @container document (width > 768px) {
      /* fx grid-template-columns: 300px 1fr */
    }
    ```
