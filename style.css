@@ -1,16 +1,151 @@
 :root {
-    --gray-50: #f9fafb;
-    --gray-100: #f3f4f6;
-    --gray-200: #e5e7eb;
-    --gray-300: #d1d5db;
-    --gray-400: #9ca3af;
-    --gray-500: #6b7280;
-    --gray-600: #4b5563;
-    --gray-700: #374151;
-    --gray-800: #1f2937;
-    --gray-900: #111827;
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+
+  /* Typografi-skala (flydende fra Utopia calculator) */
+
+  --step--1: clamp(0.83rem, 0.79rem + 0.19vw, 0.9rem);
+  --step-0: clamp(1rem, 0.94rem + 0.28vw, 1.125rem);
+  --step-1: clamp(1.25rem, 1.16rem + 0.42vw, 1.4rem);
+  --step-2: clamp(1.56rem, 1.44rem + 0.59vw, 1.75rem);
+  --step-3: clamp(1.95rem, 1.79rem + 0.83vw, 2.19rem);
+  --step-4: clamp(2.44rem, 2.23rem + 1.14vw, 2.73rem);
+  --step-5: clamp(3.05rem, 2.79rem + 1.56vw, 3.42rem);
+
+  /* Spacing-skala */
+  --space-2xs: clamp(0.25rem, 0.23rem + 0.09vw, 0.5rem);
+  --space-xs: clamp(0.5rem, 0.46rem + 0.18vw, 0.75rem);
+  --space-s: clamp(0.75rem, 0.69rem + 0.28vw, 1rem);
+  --space-m: clamp(1rem, 0.92rem + 0.37vw, 1.5rem);
+  --space-l: clamp(1.5rem, 1.38rem + 0.55vw, 2rem);
+  --space-xl: clamp(2rem, 1.83rem + 0.73vw, 3rem);
+  --space-2xl: clamp(3rem, 2.75rem + 1.1vw, 4rem);
 }
 
 body {
-    font-family: system-ui, sans-serif;
+  font-family: system-ui, sans-serif;
+  font-size: var(--step-0);
+  color: var(--gray-700);
+  line-height: 1.7;
+  background-color: var(--gray-50);
+  margin: var(--space-l);
+}
+
+/* === Artikelens layout === */
+article {
+  max-width: 65ch;
+  margin-inline: auto;
+  padding-block: var(--space-xl);
+  display: grid;
+  gap: var(--space-m);
+}
+
+/* === Overskrifter === */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--gray-900);
+}
+
+h1 {
+  font-size: var(--step-5);
+  margin-block: var(--space-s) var(--space-xs);
+}
+
+h2 {
+  font-size: var(--step-3);
+  margin-block: var(--space-m) var(--space-s);
+}
+
+h3 {
+  font-size: var(--step-2);
+  margin-block: var(--space-xs) var(--space-xs);
+}
+
+h4 {
+  font-size: var(--step-1);
+  margin-block: var(--space-s) var(--space-xs);
+}
+
+/* === Tekst === */
+p {
+  margin-block: var(--space-2xs);
+}
+
+.text-lead {
+  font-size: var(--step-1);
+  color: var(--gray-600);
+  line-height: 1.8;
+}
+
+.text-small {
+  font-size: var(--step--1);
+  color: var(--gray-500);
+}
+
+/* === Links === */
+a {
+  color: var(--gray-800);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  color: var(--gray-600);
+}
+
+/* === Billeder og figurer === */
+figure {
+  margin-block: var(--space-l);
+}
+
+img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+figcaption {
+  font-size: var(--step--1);
+  color: var(--gray-500);
+  text-align: center;
+  margin-top: var(--space-xs);
+  line-height: 1.4;
+}
+
+/* === Lists === */
+ul,
+ol {
+  padding-left: var(--space-l);
+  margin-block: var(--space-s);
+}
+
+li {
+  margin-block: 0.3em;
+  color: var(--gray-700);
+}
+
+/* === Code & Quotes === */
+code {
+  background: var(--gray-200);
+  padding: 0.1em 0.3em;
+  border-radius: 0.3em;
+  font-size: 0.95em;
+}
+
+blockquote {
+  border-left: 4px solid var(--gray-300);
+  padding-left: var(--space-s);
+  font-style: italic;
+  color: var(--gray-600);
 }
