@@ -1,16 +1,97 @@
 :root {
-    --gray-50: #f9fafb;
-    --gray-100: #f3f4f6;
-    --gray-200: #e5e7eb;
-    --gray-300: #d1d5db;
-    --gray-400: #9ca3af;
-    --gray-500: #6b7280;
-    --gray-600: #4b5563;
-    --gray-700: #374151;
-    --gray-800: #1f2937;
-    --gray-900: #111827;
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+
+  /* Fluid typografi-skala
+     Hvert --step repræsenterer et trin i en skala (ca. ratio 1.25).
+     clamp(min, fluid, max) gør at størrelsen:
+       - ikke bliver mindre end min på små skærme
+       - vokser gradvist med viewport-bredden (vi)
+       - stopper ved max på store skærme */
+
+  --step--1: clamp(0.8rem, 0.7809rem + 0.0813vi, 0.844rem);
+  --step-0: clamp(1rem, 0.9458rem + 0.2312vi, 1.125rem);
+  --step-1: clamp(1.25rem, 1.1418rem + 0.4617vi, 1.4996rem);
+  --step-2: clamp(1.5625rem, 1.3733rem + 0.8074vi, 1.999rem);
+  --step-3: clamp(1.9531rem, 1.6447rem + 1.3161vi, 2.6647rem);
+  --step-4: clamp(2.4414rem, 1.9599rem + 2.0543vi, 3.552rem);
+  --step-5: clamp(3.0518rem, 2.3221rem + 3.1132vi, 4.7348rem);
 }
 
 body {
-    font-family: system-ui, sans-serif;
+  /* display: flow-root = body holder selv styr på indholdet
+     (indkapsler floats + ingen uventet kollaps af top/bund margin). */
+  display: flow-root;
+  font-family: system-ui, sans-serif;
+  font-size: var(--step-0);
+  line-height: 1.5;
+  color: var(--gray-700);
+}
+h1,
+h2,
+h3 {
+  color: var(--gray-900);
+  line-height: 1.125;
+}
+
+h1 {
+  font-size: var(--step-5);
+}
+
+h2 {
+  font-size: var(--step-4);
+}
+
+h3 {
+  font-size: var(--step-3);
+}
+
+h4,
+.text-lead {
+  font-size: var(--step-2);
+  line-height: 1.3;
+}
+
+article {
+  max-width: 65ch;
+  /* margin-inline centrerer;*/
+  margin-inline: auto;
+  /* margin-block = lodret afstand;*/
+  margin-block: 3rem;
+  /* padding-inline = vandret indre luft */
+  padding-inline: 1rem;
+
+  /* Vælg alle elementer, som står lige efter et andet element (fra barn nr. 2) */
+  > * + * {
+    margin-top: var(--flow-space, 0.5rlh);
+  }
+
+  h2 {
+    --flow-space: 1.5rlh;
+  }
+
+  h3,
+  h4,
+  .text-lead {
+    --flow-space: 1.3rlh;
+  }
+
+  /*Første direkte barn efter .text-lead eller figure*/
+  .text-lead + *,
+  figure + * {
+    --flow-space: 1lh;
+  }
+}
+figcaption {
+  font-size: var(--step--1);
+  color: var(--gray-500);
+  margin-block: 0.25rlh;
 }
