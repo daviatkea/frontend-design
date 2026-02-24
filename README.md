@@ -1,22 +1,70 @@
-# **Styling af tekstindhold**
+# Styling af tekstindhold
 
 ## Formål
 
-At forbedre den visuelle præsentation af tekstindhold ved at anvende principper for god typografi og farveskemaer. Denne opgave opfordrer dig til at være opmærksom på detaljerne i din styling for at maksimere både æstetikken og læsbarheden.
+At forbedre den visuelle præsentation af tekstindhold ved at anvende principper for god typografi, spacing og hierarki.
 
-## Ressourcer
+Opgaven handler om at gøre indholdet mere læsbart og mere bevidst stylet ved hjælp af:
 
-- [Some Simple Ways to Make Content Look Good](https://set.studio/some-simple-ways-to-make-content-look-good/) for teoretisk baggrund.
-- Utopia's [Type Scale Calculator](https://utopia.fyi/type/calculator/?c=320,16,1.25,1240,18,1.333,5,1,&s=0.75%7C0.5%7C0.25,1.5%7C2%7C3%7C4%7C6,s-l&g=s,l,xl,12) og [Space Scale Calculator](https://utopia.fyi/space/calculator?c=320,16,1.25,1240,18,1.333,5,1,&s=0.75%7C0.5%7C0.25,1.5%7C2%7C3%7C4%7C6,s-l&g=s,l,xl,12) for at generere en flydende typografi og spacing skala.
-- [Sane Typography Rules](https://anthonyhobday.com/sideprojects/saferules/) - Dette værktøj giver en praktisk oversigt over typografiregler, som kan hjælpe dig med at træffe gode beslutninger om skriftstørrelser, linjeafstand og skrifttyper. Det er særligt nyttigt til at forstå, hvordan forskellige skriftstørrelser og linjeafstande interagerer for at skabe en sammenhængende og læsevenlig tekst.
+- typografisk skala
+- spacing-skala
+- line-height
+- vertikal rytme
+- toneværdi/gråtonehierarki (neutrals)
+- styling af tekstnære elementer (links, inline `code`, `figure`, `figcaption`)
+
+## Kursusmateriale (primær reference)
+
+Brug primært emnesiderne fra kurset som hjælp og reference til denne opgave.
+
+> [!NOTE]
+> Hvis du læser denne README uden for kurssitet, skal du evt. erstatte `/topic/...`-links med den fulde URL til kursussitet.
+
+1. [Styling af tekstindhold](/topic/3sem/crafting-ui/typography/styling-af-tekstindhold)
+   - prose/article-wrapper, links, inline code, figcaption, nabo-regler og typografisk hierarki
+
+2. [Fluid typografi og skalaer i praksis](/topic/3sem/crafting-ui/typography/fluid-typografi-og-skalaer-i-praksis)
+   - hvordan du bruger type- og spacing-skalaer (`--step-*`, `--space-*`) i praksis
+
+3. [Flow-space og spacing i praksis](/topic/3sem/crafting-ui/typography/flow-space-og-spacing-i-praksis)
+   - flow-space, `gap` og spacing-intent i læsbare layouts
+
+4. [Line-height, lh og rlh i praksis](/topic/3sem/crafting-ui/typography/line-height-lh-og-rlh-i-praksis)
+   - line-height som læsbarheds- og layoutværktøj
+
+5. [Vertikal rytme og typografi](/topic/3sem/crafting-ui/vertikal-rytme-og-typografi)
+   - rytme, læsebredde og spacing mellem tekstblokke
+
+## Værktøjer (sekundært / valgfrit)
+
+Brug værktøjerne til at generere værdier, men brug kursusmaterialet til at forstå og anvende dem.
+
+- [Utopia Type Scale Calculator](https://utopia.fyi/type/calculator/)
+- [Utopia Space Scale Calculator](https://utopia.fyi/space/calculator)
+- [Sane Typography Rules](https://anthonyhobday.com/sideprojects/saferules/) (hurtigt opslagsværk)
 
 ## Opgavebeskrivelse
 
-Du skal arbejde med denne branch, som indeholder et HTML-dokuement med hovedoverskrifter, underoverskrifter, paragraffer, billeder og andre typografiske elementer. Brug "style.css" til at tilføje typografiske og farvemæssige forbedringer til indholdet.
+Du skal arbejde med denne branch, som indeholder et HTML-dokument med overskrifter, paragraffer, billeder og andre typografiske elementer.
 
-Anvend så vidt muligt ovenstående ressourcer til at revidere den eksisterende typografi og farveskema. Fokuser på en god typografiskala til at skabe kontrast og hierarki mellem overskrifter og brødtekst og forbedr den vertikale rytme i dit indhold ved at justere linjehøjden, hvor det er passende.
+Brug `style.css` til at forbedre indholdets typografi og visuelle hierarki.
 
-Der er følgende farver til rådighed som custom properties:
+Fokus er ikke på at bygge komponenter, men på at style **tekstindhold (prose/article)**, så det bliver:
+
+- læsbart
+- roligt
+- hierarkisk tydeligt
+- visuelt sammenhængende
+
+HTML’en indeholder allerede forskellige elementer (bl.a. `h1-h4`, `p`, links, inline `code`, `figure`, `figcaption`) og små tekstvarianter som `.text-lead` og `.text-small`, som du forventes at tage stilling til.
+
+## Rammer
+
+- Du arbejder i `style.css`
+- Branchens CSS reset er allerede inkluderet
+- Brug de eksisterende gråtoner i `:root` som udgangspunkt for tonehierarki
+
+Tilgængelige gråtoner:
 
 - `--gray-50: #f9fafb;`
 - `--gray-100: #f3f4f6;`
@@ -29,27 +77,69 @@ Der er følgende farver til rådighed som custom properties:
 - `--gray-800: #1f2937;`
 - `--gray-900: #111827;`
 
-### Specifikke mål
+## Anbefalet fremgangsmåde
 
-1. Anvend Utopias Type Scale Calculator til at generere en flydende typografiskala til at definere skriftstørrelser for forskellige elementer som overskrifter og paragraffer.
-2. Implementering af Utopias spacingskala for at ensrette afstanden mellem de forskellige elementer.
-3. Juster farven på brødtekst for at sikre, at overskrifter skiller sig ud, og overvej at bruge en lettere farve for at reducere visuel vægt af mindre vigtig tekst – brug de medfølgende gråtoner (i :root).
-4. Øg linjehøjden for at forbedre læsbarheden, baseret på skriftstørrelse og tekstens tæthed.
+1. Start med en `article`/prose-wrapper:
+   - læsebredde
+   - centreret layout
+   - grundlæggende flow-spacing
 
-> [!NOTE]  
-> **Bemærk, at denne branch allerede inkluderer et CSS Reset.**
+2. Definér en typografisk skala som tokens (fx `--step-*`)
+   - brug den på `h1-h4`, brødtekst, lead og small tekst
 
-Du forventes at tage stilling til skriftstørrelser, linjeafstand, marginer, og farveværdier i din løsning.
+3. Definér en spacing-skala (fx `--space-*`)
+   - brug den til både wrapper-padding og vertikal spacing
+
+4. Indfør toneværdi/gråtonehierarki
+   - overskrifter mørkere
+   - brødtekst lidt lysere
+   - småtekst/figcaption endnu lettere (men stadig læsbar)
+
+5. Finjustér line-height
+   - ikke kun globalt, men bevidst for overskrifter og brødtekst
+
+6. Tilføj nabo-regler (adjacency)
+   - fx `p + h2`, `h2 + h3`, `figure + h2`
+   - så spacing føles gennemtænkt og ikke “ens overalt”
+
+7. Style tekstnære elementer
+   - links
+   - inline `code`
+   - `figure` og `figcaption`
+
+## Specifikke mål
+
+1. Definér en flydende typografiskala som tokens (fx `--step-*`) og brug den på `h1-h4`, brødtekst og småtekst.
+2. Definér en spacing-skala (fx `--space-*`) og brug den til både article-padding og vertikal spacing i indholdet.
+3. Byg en `article`/prose-wrapper med passende læsebredde og stabil flow-spacing.
+4. Brug toneværdi/gråtonehierarki til typografisk hierarki:
+   - overskrifter mørkere
+   - brødtekst lidt lysere
+   - småtekst/figcaption endnu lettere (men stadig læsbar)
+5. Justér line-height bevidst (ikke kun globalt) for overskrifter og brødtekst.
+6. Tilføj mindst et par nabo-regler (fx `p + h2`, `h2 + h3`), så spacing føles gennemtænkt.
+7. Style links, inline `code`, `figure` og `figcaption`, så de passer ind i det samlede typografiske system.
+
+## Vurderingsfokus
+
+Din løsning vurderes på:
+
+- læsbarhed og visuel ro
+- tydeligt hierarki i typografi og toneværdi
+- kvaliteten af typografisk skala og spacing-skala
+- konsistens i spacing og line-height
+- kvaliteten af styling af tekstnære elementer
+- om løsningen virker på realistisk indhold (ikke kun “pæn demo”)
 
 ## Aflevering
 
 Find link til din løsning på Netlify og aflever det på Fronter.
 
-Link-struktur: **text-styling--**[Dit unikke netlify link].netlify.app/
-
-Din løsning vil blive bedømt på dens evne til at forbedre læsbarheden af indholdet samt effektiviteten af brugen af genererede skalaer og hierarkiske farvetoner.
+Link-struktur: `text-styling--[dit-unikke-netlify-link].netlify.app/`
 
 ## Tips
 
-![billede 2](/assets/2.png)
-![billede 1](/assets/1.png)
+- Test med længere overskrifter og ekstra tekst, ikke kun standardindholdet.
+- Tjek hvordan `h2 + h3` og `p + h2` ser ud. Det er ofte her typografien falder fra hinanden.
+- Brug få, tydelige tokens frem for mange næsten ens værdier.
+- Start simpelt, og finjustér bagefter.
