@@ -13,26 +13,23 @@ Opgaven handler om at gøre indholdet mere læsbart og mere bevidst stylet ved h
 - toneværdi/gråtonehierarki (neutrals)
 - styling af tekstnære elementer (links, inline `code`, `figure`, `figcaption`)
 
-## Kursusmateriale (primær reference)
+## Ressourcer
 
-Brug primært emnesiderne fra kurset som hjælp og reference til denne opgave.
+Brug ressourcerne herunder som hjælp og reference til denne opgave.
 
-> [!NOTE]
-> Hvis du læser denne README uden for kurssitet, skal du evt. erstatte `/topic/...`-links med den fulde URL til kursussitet.
-
-1. [Styling af tekstindhold](/topic/3sem/crafting-ui/typography/styling-af-tekstindhold)
+1. [Styling af tekstindhold](https://demos.cssxs.dev/topic/3sem/crafting-ui/typography/styling-af-tekstindhold)
    - prose/article-wrapper, links, inline code, figcaption, nabo-regler og typografisk hierarki
 
-2. [Fluid typografi og skalaer i praksis](/topic/3sem/crafting-ui/typography/fluid-typografi-og-skalaer-i-praksis)
+2. [Fluid typografi og skalaer i praksis](https://demos.cssxs.dev/topic/3sem/crafting-ui/typography/fluid-typografi-og-skalaer-i-praksis)
    - hvordan du bruger type- og spacing-skalaer (`--step-*`, `--space-*`) i praksis
 
-3. [Flow-space og spacing i praksis](/topic/3sem/crafting-ui/typography/flow-space-og-spacing-i-praksis)
+3. [Flow-space og spacing i praksis](https://demos.cssxs.dev/topic/3sem/crafting-ui/typography/flow-space-og-spacing-i-praksis)
    - flow-space, `gap` og spacing-intent i læsbare layouts
 
-4. [Line-height, lh og rlh i praksis](/topic/3sem/crafting-ui/typography/line-height-lh-og-rlh-i-praksis)
+4. [Line-height, lh og rlh i praksis](https://demos.cssxs.dev/topic/3sem/crafting-ui/typography/line-height-lh-og-rlh-i-praksis)
    - line-height som læsbarheds- og layoutværktøj
 
-5. [Vertikal rytme og typografi](/topic/3sem/crafting-ui/vertikal-rytme-og-typografi)
+5. [Vertikal rytme og typografi](https://demos.cssxs.dev/topic/3sem/crafting-ui/vertikal-rytme-og-typografi)
    - rytme, læsebredde og spacing mellem tekstblokke
 
 ## Værktøjer (sekundært / valgfrit)
@@ -49,7 +46,7 @@ Du skal arbejde med denne branch, som indeholder et HTML-dokument med overskrift
 
 Brug `style.css` til at forbedre indholdets typografi og visuelle hierarki.
 
-Fokus er ikke på at bygge komponenter, men på at style **tekstindhold (prose/article)**, så det bliver:
+Fokus er på at style **tekstindhold (prose/article)**, så det bliver:
 
 - læsbart
 - roligt
@@ -58,13 +55,7 @@ Fokus er ikke på at bygge komponenter, men på at style **tekstindhold (prose/a
 
 HTML’en indeholder allerede forskellige elementer (bl.a. `h1-h4`, `p`, links, inline `code`, `figure`, `figcaption`) og små tekstvarianter som `.text-lead` og `.text-small`, som du forventes at tage stilling til.
 
-## Rammer
-
-- Du arbejder i `style.css`
-- Branchens CSS reset er allerede inkluderet
-- Brug de eksisterende gråtoner i `:root` som udgangspunkt for tonehierarki
-
-Tilgængelige gråtoner:
+Brug følgende gråtoner (neutrals) i `:root` som udgangspunkt for tonehierarkiet:
 
 - `--gray-50: #f9fafb;`
 - `--gray-100: #f3f4f6;`
@@ -90,7 +81,7 @@ Tilgængelige gråtoner:
 3. Definér en spacing-skala (fx `--space-*`)
    - brug den til både wrapper-padding og vertikal spacing
 
-4. Indfør toneværdi/gråtonehierarki
+4. Indfør gråtonehierarki
    - overskrifter mørkere
    - brødtekst lidt lysere
    - småtekst/figcaption endnu lettere (men stadig læsbar)
@@ -112,7 +103,7 @@ Tilgængelige gråtoner:
 1. Definér en flydende typografiskala som tokens (fx `--step-*`) og brug den på `h1-h4`, brødtekst og småtekst.
 2. Definér en spacing-skala (fx `--space-*`) og brug den til både article-padding og vertikal spacing i indholdet.
 3. Byg en `article`/prose-wrapper med passende læsebredde og stabil flow-spacing.
-4. Brug toneværdi/gråtonehierarki til typografisk hierarki:
+4. Brug gråtonehierarki til typografisk hierarki:
    - overskrifter mørkere
    - brødtekst lidt lysere
    - småtekst/figcaption endnu lettere (men stadig læsbar)
@@ -120,22 +111,8 @@ Tilgængelige gråtoner:
 6. Tilføj mindst et par nabo-regler (fx `p + h2`, `h2 + h3`), så spacing føles gennemtænkt.
 7. Style links, inline `code`, `figure` og `figcaption`, så de passer ind i det samlede typografiske system.
 
-## Vurderingsfokus
-
-Din løsning vurderes på:
-
-- læsbarhed og visuel ro
-- tydeligt hierarki i typografi og toneværdi
-- kvaliteten af typografisk skala og spacing-skala
-- konsistens i spacing og line-height
-- kvaliteten af styling af tekstnære elementer
-- om løsningen virker på realistisk indhold (ikke kun “pæn demo”)
-
-## Aflevering
-
-Find link til din løsning på Netlify og aflever det på Fronter.
-
-Link-struktur: `text-styling--[dit-unikke-netlify-link].netlify.app/`
+> [!NOTE]
+> Bemærk, at denne branch allerede inkluderer et CSS Reset.
 
 ## Tips
 
@@ -143,3 +120,9 @@ Link-struktur: `text-styling--[dit-unikke-netlify-link].netlify.app/`
 - Tjek hvordan `h2 + h3` og `p + h2` ser ud. Det er ofte her typografien falder fra hinanden.
 - Brug få, tydelige tokens frem for mange næsten ens værdier.
 - Start simpelt, og finjustér bagefter.
+
+## Aflevering
+
+Find link til din løsning på Netlify og aflever det på Fronter.
+
+Link-struktur: `text-styling--[dit-unikke-netlify-link].netlify.app/`
