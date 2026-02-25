@@ -42,7 +42,7 @@ Kortene skal styles forskelligt ud fra deres indhold:
 
 Brug `:has()` (og `:not()`) til at sætte reglerne op.
 
-> !NOTE
+> [!NOTE]
 > `:not()` betyder: **ikke**.
 > Når du kombinerer den med `:has()`, kan du læse det som: **“vælg elementer, som ikke har …”**
 >
