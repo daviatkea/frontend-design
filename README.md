@@ -1,39 +1,74 @@
-# **No Classes (Style baseret på indhold)**
+# No Classes (relationel styling med `:has()`)
 
 ## Formål
 
-Denne opgave sigter mod at forbedre din forståelse og anvendelse af den nye :has() CSS selector for at skabe mere vedligeholdelsesvenlige stylesheets ved at reducere behovet for ekstra CSS-klasser. Ved at bruge :has(), vil du lære at anvende avanceret selector-logik til at style elementer, hvilket kan gøre din kode mere effektiv og din HTML renere.
+At træne brugen af `:has()` til at style komponenter ud fra deres indhold og struktur i stedet for ekstra CSS-klasser.
+
+Målet er ikke “aldrig at bruge klasser”, men at lære, hvornår en relationel selector gør CSS mere vedligeholdelsesvenlig og HTML’en renere.
 
 ## Ressourcer
 
-- [:has()](https://developer.mozilla.org/en-US/docs/Web/CSS/:has)
+- [`:has()` i praksis](https://demos.cssxs.dev/topic/3sem/crafting-ui/has) (Kursusmateriale)
+- [`:has()` (MDN)](https://developer.mozilla.org/en-US/docs/Web/CSS/:has)
 
 ## Opgavebeskrivelse
 
-Du skal arbejde med denne branch, som består af flere kort, der indeholder en overskrift, et tekstafsnit og/eller et billede. Dit mål er at sætte regler op for disse kort ved hjælp af **`:has()`**.
+Du skal arbejde med denne branch, som består af et HTML-dokument med kort (`cards`) med varierende indhold:
 
-Tilføj dine styles i **`style.css`**.
+- overskrift
+- tekstafsnit
+- og/eller billede
 
-Kortene skal styles forskelligt baseret på følgende betingelser:
+Din opgave er at style kortene i `style.css` ved hjælp af **`:has()`** og i kombination med `:not()`, så kortene reagerer på deres indhold.
 
-- Kort uden både et billede og en overskrift skal have en justeret font-størrelse og linjehøjde for paragraf tekst.
-- Kort uden billeder skal have en forøget font-størrelse for overskrifter.
-- Kort med billeder skal have nul padding, men deres indhold skal matche padding’en fra de øvrige kort.
+Målet er at undgå ekstra “klasser” i HTML, når informationen allerede findes i markup’en.
+
+## Krav til styling (se referencebillede)
+
+Kortene skal styles forskelligt ud fra deres indhold:
+
+1. **Kort uden billede**
+   - Overskriften (`h3`) skal være større (som vist i referencebilledet).
+
+2. **Kort, der hverken har billede eller overskrift**  
+   (dvs. kort med kun paragraftekst)
+   - Paragrafteksten (`p`) skal have justeret typografi:
+     - `font-size: 1.25rem`
+     - `line-height: 1.4`
+
+3. **Kort med billede**
+   - Billedet skal være **full bleed** (gå helt ud til kortets kanter).
+   - Kortets tekstindhold skal stadig flugte med den samme indvendige padding som de øvrige kort.
+
+Brug `:has()` (og evt. `:not()`) til at sætte reglerne op.
 
 Se billedet for reference.
+
+> Referencebilledet viser fire varianter af samme kort:
+>
+> - uden billede + med overskrift
+> - uden billede + uden overskrift
+> - med billede + med overskrift
+> - med billede + uden overskrift
 
 ![Billede](./assets/reference.png)
 
 > [!WARNING]  
 > **Bemærk, at denne branch IKKE inkluderer et CSS Reset.**
 
-### Specifikke mål
+## Faglige forventninger
 
-- Bliv bekendt med **`:has()`** til at style elementer
+Din løsning skal vise, at du kan:
+
+- bruge `:has()` til at style parent/komponent ud fra indhold
+- kombinere `:has()` med `:not()` når det giver mening
+- holde selectors læsbare
+- løse opgaven uden ændringer i HTML-strukturen
 
 ### Instruktioner
 
-- Ændringer i HTML-strukturen er ikke tilladt.
+- Skriv dine styles i `style.css`
+- Ændringer i HTML-strukturen er **ikke** tilladt
 
 ## Aflevering
 
