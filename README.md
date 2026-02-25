@@ -40,7 +40,17 @@ Kortene skal styles forskelligt ud fra deres indhold:
    - Billedet skal være **full bleed** (gå helt ud til kortets kanter).
    - Kortets tekstindhold skal stadig flugte med den samme indvendige padding som de øvrige kort.
 
-Brug `:has()` (og evt. `:not()`) til at sætte reglerne op.
+Brug `:has()` (og `:not()`) til at sætte reglerne op.
+
+> !NOTE
+> `:not()` betyder: **ikke**.
+> Når du kombinerer den med `:has()`, kan du læse det som: **“vælg elementer, som ikke har …”**
+>
+> ```css
+> section:not(:has(h2)) {
+>   opacity: 0.7;
+> }
+> ```
 
 Se billedet for reference.
 
