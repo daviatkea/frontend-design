@@ -8,7 +8,7 @@ Målet er ikke at sætte margin på hvert element enkeltvis, men at lave en robu
 
 ## Ressourcer
 
-- [Flow-space og spacing i praksis](https://demos.cssxs.dev/topic/3sem/crafting-ui/typography/.flow-space-og-spacing-i-praksis) (kursusmateriale)
+- [Flow-space og spacing i praksis](https://demos.cssxs.dev/topic/3sem/crafting-ui/typography/flow-space-og-spacing-i-praksis) (kursusmateriale)
 - [My favourite 3 lines of CSS](https://piccalil.li/blog/my-favourite-3-lines-of-css/) af Andy Bell
 
 ## Opgavebeskrivelse
