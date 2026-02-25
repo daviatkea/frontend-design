@@ -19,7 +19,7 @@ Du skal arbejde med denne branch, som består af et HTML-dokument med kort (`car
 - tekstafsnit
 - og/eller billede
 
-Din opgave er at style kortene i `style.css` ved hjælp af **`:has()`** og i kombination med `:not()`, så kortene reagerer på deres indhold.
+Din opgave er at style kortene i `style.css` ved hjælp af **`:has()`** i kombination med `:not()`, så kortene reagerer på deres indhold.
 
 Målet er at undgå ekstra “klasser” i HTML, når informationen allerede findes i markup’en.
 
@@ -30,7 +30,7 @@ Kortene skal styles forskelligt ud fra deres indhold:
 1. **Kort uden billede**
    - Overskriften (`h3`) skal være større (som vist i referencebilledet).
 
-2. **Kort, der hverken har billede eller overskrift**  
+2. **Kort, der hverken har et billede eller en overskrift**  
    (dvs. kort med kun paragraftekst)
    - Paragrafteksten (`p`) skal have justeret typografi:
      - `font-size: 1.25rem`
