@@ -1,4 +1,9 @@
-article {
-    max-width: 65ch;
-    margin-inline: auto;
+body {
+  display: grid;
+  /* Tilføj navngivne linjer */
+  grid-template-columns: 1fr minmax(0, 70ch) 1fr;
+}
+
+.breakout {
+  background: #a8fad5;
 }
