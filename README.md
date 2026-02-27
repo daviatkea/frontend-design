@@ -32,9 +32,9 @@ Brug ressourcerne herunder som hjælp og reference til denne opgave.
 5. [Vertikal rytme og typografi](https://demos.cssxs.dev/topic/3sem/crafting-ui/vertikal-rytme-og-typografi)
    - rytme, læsebredde og spacing mellem tekstblokke
 
-## Værktøjer (sekundært / valgfrit)
+## Værktøjer
 
-Brug værktøjerne til at generere værdier, men brug kursusmaterialet til at forstå og anvende dem.
+Brug værktøjerne til at generere typografiske skalaer, spacing-skalaer og til at tjekke dine typografiske valg.
 
 - [Utopia Type Scale Calculator](https://utopia.fyi/type/calculator/)
 - [Utopia Space Scale Calculator](https://utopia.fyi/space/calculator)
@@ -70,7 +70,7 @@ Brug følgende gråtoner (neutrals) i `:root` som udgangspunkt for tonehierarkie
 
 ## Anbefalet fremgangsmåde
 
-1. Start med en `article`/prose-wrapper:
+1. Start med en `article`-wrapper:
    - læsebredde
    - centreret layout
    - grundlæggende flow-spacing
@@ -102,7 +102,7 @@ Brug følgende gråtoner (neutrals) i `:root` som udgangspunkt for tonehierarkie
 
 1. Definér en flydende typografiskala som tokens (fx `--step-*`) og brug den på `h1-h4`, brødtekst og småtekst.
 2. Definér en spacing-skala (fx `--space-*`) og brug den til både article-padding og vertikal spacing i indholdet.
-3. Byg en `article`/prose-wrapper med passende læsebredde og stabil flow-spacing.
+3. Opsæt en `article`-wrapper med passende læsebredde og stabil flow-spacing.
 4. Brug gråtonehierarki til typografisk hierarki:
    - overskrifter mørkere
    - brødtekst lidt lysere
