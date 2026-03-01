@@ -14,7 +14,7 @@ Målet er at træne en vedligeholdelsesvenlig layoutstruktur med navngivne linje
 ## Ressourcer
 
 - [`Subgrid`](https://demos.cssxs.dev/topic/3sem/crafting-ui/responsive/subgrid)
-- [`subgrid-layout`](https://demos.cssxs.dev/topic/3sem/crafting-ui/responsive/subgrid#%C3%B8velse-2)
+  - [`Makro-layout med full-bleed`](https://demos.cssxs.dev/topic/3sem/crafting-ui/responsive/subgrid#%C3%B8velse-2)
 - [Subgrid-øvelser](https://cssxs.dev/subgrid)
 
 ## Opgavebeskrivelse
