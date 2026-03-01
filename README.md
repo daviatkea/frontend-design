@@ -29,7 +29,7 @@ Brug ressourcerne herunder som hjælp og reference til denne opgave.
 4. [Line-height, lh og rlh i praksis](https://demos.cssxs.dev/topic/3sem/crafting-ui/typography/line-height-lh-og-rlh-i-praksis)
    - line-height som læsbarheds- og layoutværktøj
 
-5. [Units i praksis](https://demos.cssxs.dev/topic/3sem/crafting-ui/units-i-praksis)
+5. [Units i praksis](https://demos.cssxs.dev/topic/3sem/crafting-ui/typography/units-i-praksis)
    - hvordan du bruger forskellige units (rem, lh, ch) i typografi og spacing
 
 ## Værktøjer
