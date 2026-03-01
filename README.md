@@ -32,6 +32,7 @@ Du er nu klar til at gå i gang med opgaverne. Når du skal lave en øvelse, så
 
 ### Layout
 
+- Makro-layout med full-bleed ("makrolayout")
 - Grid Breakout ("breakout")
 - Scrolling Container ("scrolling-container")
 - Subgrid Caption ("subgrid-caption")
