@@ -1,9 +1,54 @@
+/* Vi skal forestille os at der er luft / content / luft */
+/* 1fr = luft også kommer content også 1fr igen  */
+
 body {
   display: grid;
-  /* Tilføj navngivne linjer */
-  grid-template-columns: 1fr minmax(0, 70ch) 1fr;
+  grid-template-columns:
+    [full-start] 1fr
+    [content-start] minmax(0, 70ch)
+    [content-end] 1fr
+    [full-end];
 }
+
+/* Vi bruger subgrid til ikke at skulle gentage igen og igen, den arver altså fra parent grid. */
+/* I opgaven står der at .breakout skal placeres i det brede spor (full) og indeholdet skal placeres i content  */
+/* derfor får breakout et grid-column fra full-start til full-end som gør at den går helt ud til kanten, altså den grønne farve. */
+/* Men alt inde i breakout (dens barn) skal være læsebart, derfor skal de i content-sporet. */
 
 .breakout {
   background: #a8fad5;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: full-start / full-end;
+
+  > :not(&) {
+    grid-column: content-start / content-end;
+  }
+}
+
+/* Da breakouts billed og tekst skal sætte op med sit eget grid, så skal vi finde breakouts child, som er div   */
+.breakout > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  .breakout > div {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* se noter fra breakout  */
+header,
+footer,
+main {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: full-start / full-end;
+
+  > :not(&) {
+    grid-column: content-start / content-end;
+  }
 }
